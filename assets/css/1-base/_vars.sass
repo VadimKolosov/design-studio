@@ -1,0 +1,42 @@
+/*** =================================================================***/
+/*                           VARIABLES                                  */
+/*** =================================================================***/
+$black: #000
+$lightGrey: #0f0f0f
+$lightBrown: #ca9f72
+
+
+
+
+.flex-row
+  display: flex
+  flex-direction: row
+
+.flex-col
+  display: flex
+  flex-direction: column
+
+.hamburger
+  position: fixed
+  top: 40px
+  right: calc(250 - 3em)
+  background: 0
+  padding: 0
+  margin: 0
+  border: 0
+  cursor: pointer
+
+  span
+    display: block
+    width: 30px
+    height: 2px
+    background-color: $lightBrown
+    margin-bottom: 5px
+    transition: all .5s ease-in-out
+  &:hover
+    .top-line
+      width: 15px
+      transform: rotate(45deg) translateY(-11px) translateX(11px)
+    .bottom-line
+      width: 15px
+      transform: rotate(-45deg) translateY(11px) translateX(11px)

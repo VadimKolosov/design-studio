@@ -1,0 +1,93 @@
+/*** =================================================================***/
+/*                         HEADER SECTION                               */
+/*** =================================================================***/
+
+.header
+  height: 100vh
+  background:
+    image: url('../img/header-background.jpg')
+    size: cover
+    position: center center
+    repeat: no-repeat
+
+  &--logo
+    width: 210px
+    height: 65px
+    position: absolute
+    top: 30px
+    left: 95px
+    background:
+      image: url('../img/logo-design-studio.svg')
+      position: center center
+      repeat: no-repeat
+
+  h1
+    position: absolute
+    left: 95px
+    bottom: 90px
+    display: block
+    line-height: 60px
+    width: 12em
+
+  &--menu-wrapper
+    position: fixed
+    z-index: 10
+    right: 0
+    width: 250px
+    height: 100vh
+    background-color: transparentize(white, 0.3)
+
+  &--link-wrapper
+    display: flex
+    flex-direction: column
+    justify-content: center
+    box-sizing: border-box
+    padding-left: 3em
+    height: 50%
+    background-color: white
+    a
+      display: block
+      position: relative
+      text-transform: uppercase
+      font-size: 24px
+      font-weight: bold
+      line-height: 1.5
+      color: $black
+      transition: .1s ease-in-out
+      &:hover
+        color: $lightBrown
+      &:active
+        left: 1px
+
+  &--contact-wrapper
+    justify-content: flex-end
+    height: 50%
+    p
+      margin: 10px
+      margin-left: 3em
+      color: $lightGrey
+      line-height: 1.4
+      font-size: 14px
+      strong
+        display: block
+      a
+        color: $black
+
+  &--social-wrapepr
+    margin-top: 70px
+    a
+      width: 100%
+      padding: 10px 0 20px 0
+      text-align: center
+      border-right: 1px solid transparentize($black, 0.9)
+      svg
+        width: 20px
+        height: 20px
+        path
+          transition: all .3s ease-in-out
+      &:last-child
+        border: none
+      &:hover
+        svg
+          path
+            fill: $black

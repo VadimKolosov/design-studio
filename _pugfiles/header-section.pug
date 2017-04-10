@@ -1,0 +1,34 @@
+header.header
+  .header--logo
+  h1 Стиль &#8211; созданный из натурального дерева
+  
+  .header--menu-wrapper
+    .header--link-wrapper
+      button.hamburger
+        span.top-line
+        span.middle-line
+        span.bottom-line
+          
+      a(href="#") Начало
+      a(href="#") О нас
+      a(href="#") Создание
+      a(href="#") Продукты
+      a(href="#") Контакты
+      
+    .header--contact-wrapper.flex-col
+      p
+        strong Телефон
+        a(href="tel:+38 091 777 70 70") 38 091 777 70 70
+      p
+        strong E-mail
+        a(href="mailto:info@studioddesign.io") info@studioddesign.io
+        
+      .header--social-wrapepr.flex-row
+        a(href="#")
+          include icons/icon-facebook.pug
+        a(href="#")
+          include icons/icon-pinterest.pug
+        a(href="#")
+          include icons/icon-behance.pug
+    
+    
