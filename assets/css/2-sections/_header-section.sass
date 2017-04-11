@@ -9,25 +9,35 @@
     size: cover
     position: center center
     repeat: no-repeat
+    overflow: hidden
+
+  &--intro-wrapper
+    justify-content: space-between
+    box-sizing: border-box
+    padding: 65px 0 90px 95px
+    @media(max-width: 768px)
+      padding: 65px 0 90px 45px
+    @media(max-width: 414px)
+      padding: 20px 0 40px 20px
 
   &--logo
     width: 210px
-    height: 65px
-    position: absolute
-    top: 30px
-    left: 95px
-    background:
-      image: url('../img/logo-design-studio.svg')
-      position: center center
-      repeat: no-repeat
+    @media(max-width: 414px)
+      width: 180px
+    @media(max-width: 414px)
+      width: 160px
+
 
   h1
-    position: absolute
-    left: 95px
-    bottom: 90px
-    display: block
+    // display: none
     line-height: 60px
-    width: 12em
+    width: 11.5em
+    @media(max-width: 414px)
+      font-size: 30px
+      line-height: 40px
+    @media(max-width: 320px)
+      font-size: 26px
+      line-height: 35px
 
   &--menu-wrapper
     position: fixed
@@ -36,15 +46,30 @@
     width: 250px
     height: 100vh
     background-color: transparentize(white, 0.3)
+    transition: .5s ease-in-out
+    transform: translateX(100%)
+    @media(max-width: 768px)
+      background-color: white
+      width: 100%
 
   &--link-wrapper
     display: flex
     flex-direction: column
     justify-content: center
     box-sizing: border-box
-    padding-left: 3em
+    padding-left: 45px
     height: 50%
     background-color: white
+    &::before
+      display: block
+      content: ''
+      width: 35px
+      height: 1px
+      background-color: transparentize($lightGrey, .8)
+      position: relative
+      top: -50px
+      @media(max-width: 414px)
+        display: none
     a
       display: block
       position: relative
@@ -53,7 +78,9 @@
       font-weight: bold
       line-height: 1.5
       color: $black
-      transition: .1s ease-in-out
+      transition: .2s ease-in-out
+      transform: translateY(30px)
+      opacity: 0
       &:hover
         color: $lightBrown
       &:active
@@ -64,16 +91,22 @@
     height: 50%
     p
       margin: 10px
-      margin-left: 3em
+      box-sizing: border-box
+      padding-left: 50px
+      margin-left: 0
       color: $lightGrey
       line-height: 1.4
       font-size: 14px
+      transform: translateY(30px)
+      opacity: 0
       strong
         display: block
       a
         color: $black
 
   &--social-wrapepr
+    transform: translateY(30px)
+    opacity: 0
     margin-top: 70px
     a
       width: 100%
@@ -91,3 +124,67 @@
         svg
           path
             fill: $black
+
+/* HAMBURGER MENU */
+.hamburger
+  position: fixed
+  top: 40px
+  right: calc(250px - 75px)
+  background: 0
+  padding: 0
+  margin: 0
+  border: 0
+  cursor: pointer
+  z-index: 11
+  outline: none
+  transition: .5s ease-in-out
+  transform: translateX(120px)
+  @media(max-width: 768px)
+    right: 50px
+    transform: translateX(0)
+  @media(max-width: 320px)
+    right: 20px
+    top: 30px
+  span
+    display: block
+    width: 30px
+    height: 2px
+    background-color: $lightBrown
+    margin-bottom: 5px
+    transition: all .5s ease-in-out
+
+
+/* LEFT ARROW */
+.top-arrow-left
+  width: 15px !important
+  transform: rotate(-45deg) translateY(0) translateX(-2px)
+.middle-arrow-left
+  transform: rotate(0deg) !important
+.bottom-arrow-left
+  width: 15px !important
+  transform: rotate(45deg) translateY(0px) translateX(-2px)
+/* CROSS */
+.top-cross
+  width: 15px !important
+  transform: rotate(-45deg) translateY(10px) translateX(8px)
+.middle-cross
+  transform: rotate(45deg)
+.bottom-cross
+  width: 15px !important
+  transform: rotate(-45deg) translateX(3px)
+/* RIGHT ARROW */
+.top-arrow-right
+  width: 15px !important
+  transform: rotate(45deg) translateY(-11px) translateX(13px)
+.middle-arrow-right
+  transform: rotate(0deg) !important
+.bottom-arrow-right
+  width: 15px !important
+  transform: rotate(-45deg) translateY(11px) translateX(13px)
+
+/* SHOW MENU */
+.show-menu
+  transform: translateX(0) !important
+
+.slide-in-cross
+  transform: translateX(0)

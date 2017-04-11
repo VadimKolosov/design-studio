@@ -1,14 +1,16 @@
-header.header
-  .header--logo
-  h1 Стиль &#8211; созданный из натурального дерева
+header.header.flex-row
+  button.hamburger
+    span.line-top
+    span.line-middle
+    span.line-bottom
+      
+  .header--intro-wrapper.flex-col
+    .header--logo
+      include icons/logo-design-studio.pug
+    h1 Стиль &#8211; созданный из натурального дерева  
   
   .header--menu-wrapper
     .header--link-wrapper
-      button.hamburger
-        span.top-line
-        span.middle-line
-        span.bottom-line
-          
       a(href="#") Начало
       a(href="#") О нас
       a(href="#") Создание
