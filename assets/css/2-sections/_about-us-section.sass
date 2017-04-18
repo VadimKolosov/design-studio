@@ -1,0 +1,87 @@
+/*** =================================================================***/
+/*                          ABOUT SECTION                               */
+/*** =================================================================***/
+
+.about
+  height: 100vh
+  background:
+    image: url('../img/about-background.jpg')
+    size: cover
+    position: center center
+    repeat: no-repeat
+
+  &--intro-wrapper
+    box-sizing: border-box
+    padding-left: 110px
+
+  .left-content-wrapper
+    border-right: 1px solid $lightBrown
+    height: 100vh
+
+  .site-logo
+    svg
+      path
+        fill: $black
+  &--list-content-wrapper
+    margin-top: 100px
+
+    h2
+      margin-bottom: 20px
+
+  &--list
+      li
+        display: flex
+        align-items: center
+        border-bottom: 1px solid $lightBrown
+        padding: 20px 0
+        span
+          font-weight: bold
+          font-size: 36px
+          margin-right: 40px
+          width: 80px
+        p
+          font-size: 12px
+
+  &--main-content-wrapper
+
+  &--main-content
+    box-sizing: border-box
+    padding: 192px 130px
+    h3
+      margin: 20px 0
+
+  &--image-wrapper
+    position: relative
+    overflow: hidden
+
+  &--image
+    position: absolute
+    right: 0
+    cursor: pointer
+    background:
+      size: cover
+      position: center center
+      repeat: no-repeat
+    filter: brightness(.7) saturate(.5)
+    transition: .5s ease-in-out
+    &:hover
+      transform: scale(1.1)
+      filter: brightness(.9) saturate(.8)
+    &.img-one
+      background:
+        image: url('../img/about-image-1.jpg')
+      width: 100%
+      height: 25%
+      top: 0
+    &.img-two
+      background:
+        image: url('../img/about-image-2.jpg')
+      width: 100%
+      height: 50%
+      top: 25%
+    &.img-three
+      background:
+        image: url('../img/about-image-3.jpg')
+      width: 100%
+      height: 25%
+      top: 75%

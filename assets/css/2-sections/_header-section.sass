@@ -11,31 +11,29 @@
     repeat: no-repeat
     overflow: hidden
 
+  .left-content-wrapper
+    border-right: 1px solid $white
+
   &--intro-wrapper
     justify-content: space-between
     box-sizing: border-box
-    padding: 65px 0 90px 95px
-    @media(max-width: 768px)
-      padding: 65px 0 90px 45px
-    @media(max-width: 414px)
-      padding: 20px 0 40px 20px
-
-  &--logo
-    width: 210px
-    @media(max-width: 414px)
-      width: 180px
-    @media(max-width: 414px)
-      width: 160px
-
-
+    padding-top: 40px
+    padding-left: 110px
   h1
-    // display: none
-    line-height: 60px
-    width: 11.5em
-    @media(max-width: 414px)
+    line-height: 55px
+    @media (max-width: 1350px)
       font-size: 30px
       line-height: 40px
-    @media(max-width: 320px)
+    @media (max-width: 414px)
+      font-size: 30px
+      line-height: 40px
+    @media (max-width: 736px) and (orientation: landscape)
+      line-height: 40px
+      font-size: 26px
+    @media (max-width: 480px) and (orientation: landscape)
+      font-size: 18px
+      line-height: 25px
+    @media (max-width: 320px) and (orientation: portrait)
       font-size: 26px
       line-height: 35px
 
@@ -43,23 +41,27 @@
     position: fixed
     z-index: 10
     right: 0
-    width: 250px
     height: 100vh
-    background-color: transparentize(white, 0.3)
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,0.7) 100%)
     transition: .5s ease-in-out
     transform: translateX(100%)
-    @media(max-width: 768px)
+    @media(max-device-width: 768px)
       background-color: white
       width: 100%
+    @media (max-width: 736px) and (orientation: landscape)
+      display: flex
+      flex-direction: row-reverse
+      justify-content: space-around
+      align-items: center
 
   &--link-wrapper
     display: flex
     flex-direction: column
     justify-content: center
-    box-sizing: border-box
-    padding-left: 45px
     height: 50%
-    background-color: white
+    box-sizing: border-box
+    padding-left: 30px
+
     &::before
       display: block
       content: ''
@@ -68,8 +70,10 @@
       background-color: transparentize($lightGrey, .8)
       position: relative
       top: -50px
-      @media(max-width: 414px)
+      @media(max-device-width: 414px)
         display: none
+      @media (max-width: 1024px)
+        top: -25px
     a
       display: block
       position: relative
@@ -85,14 +89,16 @@
         color: $lightBrown
       &:active
         left: 1px
+      @media (max-width: 1024px)
+        font-size: 20px
 
   &--contact-wrapper
     justify-content: flex-end
     height: 50%
     p
-      margin: 10px
       box-sizing: border-box
-      padding-left: 50px
+      padding-left: 30px
+      margin: 10px
       margin-left: 0
       color: $lightGrey
       line-height: 1.4
@@ -103,6 +109,10 @@
         display: block
       a
         color: $black
+      @media (max-width: 736px) and (orientation: landscape)
+        padding-left: 0
+      @media (max-width: 1024px)
+        font-size: 12px
 
   &--social-wrapepr
     transform: translateY(30px)
@@ -124,12 +134,26 @@
         svg
           path
             fill: $black
+      @media (max-width: 736px) and (orientation: landscape)
+        display: flex
+        background-color: transparentize($lightGrey, .9)
+        border-radius: 100%
+        justify-content: center
+        align-items: center
+        width: 40px
+        height: 40px
+        border: none
+        padding: 0
+        margin-right: 12px
+    @media (max-width: 736px) and (orientation: landscape)
+      margin-top: 20px
 
 /* HAMBURGER MENU */
 .hamburger
   position: fixed
   top: 40px
-  right: calc(250px - 75px)
+  right: 160px
+  margin-right: 60px
   background: 0
   padding: 0
   margin: 0
@@ -139,10 +163,10 @@
   outline: none
   transition: .5s ease-in-out
   transform: translateX(120px)
-  @media(max-width: 768px)
+  @media(max-device-width: 768px)
     right: 50px
     transform: translateX(0)
-  @media(max-width: 320px)
+  @media(max-device-width: 320px)
     right: 20px
     top: 30px
   span
@@ -188,3 +212,8 @@
 
 .slide-in-cross
   transform: translateX(0)
+
+.hamburger-position
+  right: calc(16.66% - 60px)
+  @media (max-width: 414px) and (orientation: portrait)
+    right: calc(16.66% - 30px)

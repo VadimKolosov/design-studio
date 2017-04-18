@@ -26,3 +26,43 @@ $lightBrown: #ca9f72
   to
     transform: translateY(0)
     opacity: 1
+
+.col-x1
+  width: 16.66%
+  background-color: red
+  // height: 100vh
+
+.col-x2
+  width: 33.32%
+  // background-color: green
+  // height: 100vh
+  @media (max-width: 768px)
+    width: 100%
+    margin-left: 0
+
+.col-x3
+  width: 49.99%
+  // height: 100vh
+  // background-color: pink
+
+.logo-wrapper
+  @media (max-width: 768px)
+    padding-left: 40px
+  @media (max-width: 375px) and (orientation: portrait)
+    padding-left: 20px
+
+.site-logo
+  width: 160px
+
+.left-content-wrapper
+    box-sizing: border-box
+    padding: 40px 0 90px 0
+    @media (max-width: 768px)
+      border-right: none
+      padding-left: 40px
+    @media (max-width: 736px) and (orientation: landscape)
+      padding: 40px 0 40px 40px
+    @media (max-width: 375px) and (orientation: portrait)
+      padding-left: 20px
+    @media (max-width: 320px) and (orientation: portrait)
+      padding-bottom: 20px
