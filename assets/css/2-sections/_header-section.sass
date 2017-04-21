@@ -11,31 +11,32 @@
     repeat: no-repeat
     overflow: hidden
 
-  .left-content-wrapper
-    border-right: 1px solid $white
-
-  &--intro-wrapper
+  &--left-col-wrapper
     justify-content: space-between
-    box-sizing: border-box
-    padding-top: 40px
-    padding-left: 110px
-  h1
-    line-height: 55px
-    @media (max-width: 1350px)
-      font-size: 30px
-      line-height: 40px
-    @media (max-width: 414px)
-      font-size: 30px
-      line-height: 40px
-    @media (max-width: 736px) and (orientation: landscape)
-      line-height: 40px
-      font-size: 26px
-    @media (max-width: 480px) and (orientation: landscape)
-      font-size: 18px
-      line-height: 25px
-    @media (max-width: 320px) and (orientation: portrait)
-      font-size: 26px
-      line-height: 35px
+    @media (max-width: 768px)
+      border: none
+
+    h1
+      display: block
+      padding: 90px 0
+      border-right: 1px solid $white
+      line-height: 55px
+      @media (max-width: 736px)
+        padding: 40px 0
+      @media (max-width: 1350px)
+        font-size: 30px
+        line-height: 40px
+      @media (max-width: 414px)
+        font-size: 30px
+      @media (max-width: 736px) and (orientation: landscape)
+        line-height: 40px
+        font-size: 26px
+      @media (max-width: 480px) and (orientation: landscape)
+        font-size: 18px
+        line-height: 25px
+      @media (max-width: 320px) and (orientation: portrait)
+        font-size: 26px
+        line-height: 35px
 
   &--menu-wrapper
     position: fixed
@@ -147,73 +148,3 @@
         margin-right: 12px
     @media (max-width: 736px) and (orientation: landscape)
       margin-top: 20px
-
-/* HAMBURGER MENU */
-.hamburger
-  position: fixed
-  top: 40px
-  right: 160px
-  margin-right: 60px
-  background: 0
-  padding: 0
-  margin: 0
-  border: 0
-  cursor: pointer
-  z-index: 11
-  outline: none
-  transition: .5s ease-in-out
-  transform: translateX(120px)
-  @media(max-device-width: 768px)
-    right: 50px
-    transform: translateX(0)
-  @media(max-device-width: 320px)
-    right: 20px
-    top: 30px
-  span
-    display: block
-    width: 30px
-    height: 2px
-    background-color: $lightBrown
-    margin-bottom: 5px
-    transition: all .5s ease-in-out
-
-
-/* LEFT ARROW */
-.top-arrow-left
-  width: 15px !important
-  transform: rotate(-45deg) translateY(0) translateX(-2px)
-.middle-arrow-left
-  transform: rotate(0deg) !important
-.bottom-arrow-left
-  width: 15px !important
-  transform: rotate(45deg) translateY(0px) translateX(-2px)
-/* CROSS */
-.top-cross
-  width: 15px !important
-  transform: rotate(-45deg) translateY(10px) translateX(8px)
-.middle-cross
-  transform: rotate(45deg)
-.bottom-cross
-  width: 15px !important
-  transform: rotate(-45deg) translateX(3px)
-/* RIGHT ARROW */
-.top-arrow-right
-  width: 15px !important
-  transform: rotate(45deg) translateY(-11px) translateX(13px)
-.middle-arrow-right
-  transform: rotate(0deg) !important
-.bottom-arrow-right
-  width: 15px !important
-  transform: rotate(-45deg) translateY(11px) translateX(13px)
-
-/* SHOW MENU */
-.show-menu
-  transform: translateX(0) !important
-
-.slide-in-cross
-  transform: translateX(0)
-
-.hamburger-position
-  right: calc(16.66% - 60px)
-  @media (max-width: 414px) and (orientation: portrait)
-    right: calc(16.66% - 30px)

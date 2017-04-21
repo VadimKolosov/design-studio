@@ -1,6 +1,7 @@
 $(document).ready(function() {
   hamburgerMenu();
   aboutImage();
+  closeButton();
 });
 
 function hamburgerMenu() {
@@ -41,5 +42,20 @@ function hamburgerMenu() {
 }
 
 function aboutImage() {
+  $('.about--image').click(function() {
+    $('.about--image-wrapper').addClass('active');
+    $('.about--image').css('height', '20%').removeClass('active-image');
+    $(this).addClass('active-image');
+  var $this = $('.about--image-wrapper');
+    if ($this.hasClass('active')) {
+      $('.button-none').css('opacity', '1');
+    }
+  });
+}
 
+function closeButton () {
+  $('.button-close').click(function() {
+    $('.about--image-wrapper').removeClass('active');
+    $('.button-none').css('opacity', '0');
+  });
 }

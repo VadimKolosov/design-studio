@@ -3,6 +3,7 @@
 /*** =================================================================***/
 
 .about
+  // display: none
   height: 100vh
   background:
     image: url('../img/about-background.jpg')
@@ -10,13 +11,11 @@
     position: center center
     repeat: no-repeat
 
-  &--intro-wrapper
-    box-sizing: border-box
-    padding-left: 110px
-
-  .left-content-wrapper
+  &--left-col-wrapper
     border-right: 1px solid $lightBrown
     height: 100vh
+    @media (max-width: 768px)
+      border: none
 
   .site-logo
     svg
@@ -42,46 +41,64 @@
         p
           font-size: 12px
 
-  &--main-content-wrapper
-
   &--main-content
     box-sizing: border-box
     padding: 192px 130px
     h3
       margin: 20px 0
+    @media(max-width: 1024px) and (orientation: landscape)
+      padding: 192px 20px
+    @media(max-width: 1024px) and (orientation: portrait)
+      padding: 192px 20px
+
+  &--image-container
+    position: relative
 
   &--image-wrapper
-    position: relative
+    position: absolute
+    top: 0
+    right: 0
+    height: 100%
+    width: 100%
     overflow: hidden
+    transition: .5s ease-in-out
+    &.active .about--image:hover
+      transform: scale(1)
+
+    .button-none
+      opacity: 0
 
   &--image
-    position: absolute
     right: 0
     cursor: pointer
     background:
       size: cover
       position: center center
       repeat: no-repeat
-    filter: brightness(.7) saturate(.5)
     transition: .5s ease-in-out
+    filter: brightness(.7) saturate(.5)
     &:hover
       transform: scale(1.1)
       filter: brightness(.9) saturate(.8)
+
     &.img-one
       background:
         image: url('../img/about-image-1.jpg')
-      width: 100%
       height: 25%
       top: 0
     &.img-two
       background:
         image: url('../img/about-image-2.jpg')
-      width: 100%
       height: 50%
       top: 25%
     &.img-three
       background:
         image: url('../img/about-image-3.jpg')
-      width: 100%
       height: 25%
       top: 75%
+
+.active
+  width: 400% !important
+
+.active-image
+  height: 60% !important

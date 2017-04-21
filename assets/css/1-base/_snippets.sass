@@ -1,0 +1,49 @@
+/*** =================================================================***/
+/*                            SNIPPETS                                  */
+/*** =================================================================***/
+
+/* FLEX PATH */
+
+.flex-row
+  display: flex
+  flex-direction: row
+
+.flex-col
+  display: flex
+  flex-direction: column
+
+
+/* GRID */
+
+.col-x1
+  width: 16.66%
+  // background-color: red
+  // height: 100vh
+
+.col-x2
+  width: 33.32%
+  // background-color: green
+  // height: 100vh
+  @media (max-width: 768px)
+    width: 100%
+    margin-left: 0
+
+.col-x3
+  width: 49.99%
+  // height: 100vh
+  // background-color: pink
+
+.left-padding
+  box-sizing: border-box
+  padding-left: 110px
+  @media(max-width: 1024px)
+    padding-left: 40px
+  @media(max-width: 736px)
+    padding-left: 20px
+
+
+/* SITE LOGO */
+
+.site-logo
+  width: 160px
+  padding-top: 40px
