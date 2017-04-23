@@ -9,34 +9,18 @@
     size: cover
     position: center center
     repeat: no-repeat
-    overflow: hidden
 
   &--left-col-wrapper
     justify-content: space-between
-    @media (max-width: 768px)
-      border: none
 
     h1
       display: block
       padding: 90px 0
       border-right: 1px solid $white
       line-height: 55px
-      @media (max-width: 736px)
+      @media (max-width: 768px)
         padding: 40px 0
-      @media (max-width: 1350px)
-        font-size: 30px
-        line-height: 40px
-      @media (max-width: 414px)
-        font-size: 30px
-      @media (max-width: 736px) and (orientation: landscape)
-        line-height: 40px
-        font-size: 26px
-      @media (max-width: 480px) and (orientation: landscape)
-        font-size: 18px
-        line-height: 25px
-      @media (max-width: 320px) and (orientation: portrait)
-        font-size: 26px
-        line-height: 35px
+        border: none
 
   &--menu-wrapper
     position: fixed

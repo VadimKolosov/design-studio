@@ -2,6 +2,7 @@ $(document).ready(function() {
   hamburgerMenu();
   aboutImage();
   closeButton();
+  slideUpContent();
 });
 
 function hamburgerMenu() {
@@ -57,5 +58,20 @@ function closeButton () {
   $('.button-close').click(function() {
     $('.about--image-wrapper').removeClass('active');
     $('.button-none').css('opacity', '0');
+  });
+}
+
+function slideUpContent() {
+  $(window).scroll(function(){
+    var wScroll = $(this).scrollTop();
+    console.log($(window).scrollTop());
+    if (wScroll <= 300) {
+      $('.about--list-content-wrapper, .about--main-content').each(function(i) {
+        var elm = $(this);
+        setTimeout(function() {
+          elm.addClass('slide-up');
+        }, i * 45);
+      });
+    }
   });
 }
