@@ -31,7 +31,6 @@ function hamburgerMenu() {
       $('.line-middle').addClass('middle-arrow-right');
       $('.line-bottom').addClass('bottom-arrow-right');
     }
-
       $('.line-top').addClass('top-arrow-left');
       $('.line-bottom').addClass('bottom-arrow-left');
 
@@ -52,13 +51,22 @@ function aboutImage() {
       $('.button-none').css('opacity', '1');
     }
   });
+  $('.services--tech-desc').click(function() {
+    $('.services--image-wrapper').addClass('active');
+    $('.services--tech-desc').addClass('show-tech');
+  });
 }
 
 function closeButton () {
-  $('.button-close').click(function() {
+  $('.first-btn').click(function() {
     $('.about--image-wrapper').removeClass('active');
     $('.button-none').css('opacity', '0');
   });
+  $('.second-btn').click(function() {
+    $('.services--image-wrapper').toggleClass('active');
+    $('.services--tech-desc').toggleClass('show-tech');
+  });
+
 }
 
 function slideUpContent() {

@@ -15,7 +15,7 @@
         <h1>Стиль &#8211; созданный из натурального дерева</h1>
       </div>
       <div class="header--menu-wrapper col-x1">
-        <nav class="header--link-wrapper"><a href="#">Начало</a><a href="#">О нас</a><a href="#">Услуги</a><a href="#">Продукты</a><a href="#">Контакты</a></nav>
+        <nav class="header--link-wrapper" role="navigation" aria-label="Menu"><a href="#">Начало</a><a href="#">О нас</a><a href="#">Услуги</a><a href="#">Продукты</a><a href="#">Контакты</a></nav>
         <div class="header--contact-wrapper flex-col">
           <p><strong>Телефон</strong><a href="tel:+380917777070">38 091 777 70 70</a></p>
           <p><strong>E-mail</strong><a href="mailto:info@studioddesign.io">info@studioddesign.io</a></p>
@@ -48,7 +48,11 @@
         </div>
         <div class="about--image-container col-x1">
           <div class="about--image-wrapper flex-col">
-            <div class="button-close button-none flex-col"><span></span><span></span><span></span></div>
+            <div class="button-close first-btn button-none flex-col"><span class="background"></span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+<path d="M5.4 26.6c-5.8-5.8-5.8-15.4 0-21.2s15.4-5.8 21.2 0 5.8 15.4 0 21.2-15.4 5.9-21.2 0zM25.2 6.8c-5.1-5.1-13.3-5.1-18.4 0s-5.1 13.3 0 18.4 13.3 5.1 18.4 0 5.1-13.3 0-18.4z"/>
+<path d="M20.6 22L10 11.4c-.4-.4-.4-1 0-1.4.4-.4 1-.4 1.4 0L22 20.6c.4.4.4 1 0 1.4-.4.4-1 .4-1.4 0zM10 20.6l2.6-2.6c.4-.4 1-.4 1.4 0 .4.4.4 1 0 1.4L11.4 22c-.4.4-1 .4-1.4 0-.4-.4-.4-1 0-1.4zm8-8l2.6-2.6c.4-.4 1-.4 1.4 0 .4.4.4 1 0 1.4L19.4 14c-.4.4-1 .4-1.4 0-.4-.4-.4-1 0-1.4z"/>
+</svg>
+            </div>
             <div class="about--image img-one"></div>
             <div class="about--image img-two"></div>
             <div class="about--image img-three"></div>
@@ -71,7 +75,7 @@
       </div>
       <div class="services--bottom-level flex-col col-x3">
         <div class="services--description">
-          <p>Плотницкий опыт графы и точность. Они позволяют создавать заказные потребности мебели. И не важно, говорить ли о оргтехнике, бытовых предметах и стилизованной мебели. Для того, чтобы создать исключительные вещи, которые вы должны иметь работу в руке и обращать внимание на детали. Они составляют уникальное целое.</p>
+          <p>В столярном ремесле ценится опыт и точность. Это позволяет нам создавать мебель под любые запросы и потребности. И не важно, идет ли речь об оборудовании офиса, предметах ежедневного употребления или стильной мебели. Для того, чтобы создавать исключительные вещи, которые вы должны иметь работу в руке и обращать внимание на детали. Они составляют уникальное целое.</p>
         </div>
         <div class="services--examples-low flex-row">
           <div class="services--example"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56.23 105.34">
@@ -118,8 +122,29 @@
         </div>
       </div>
       <div class="services--image-container col-x1">
-        <div class="services--image-wrapper flex-col">
-          <div class="button-close button-none flex-col"><span></span><span></span><span></span></div>
+        <div class="services--image-wrapper flex-row">
+          <div class="services--image"></div>
+          <div class="services--tech-desc flex-col show">
+            <h4>Технология</h4>
+            <p>Узнай, как производится наша мебель</p>
+          </div>
+          <div class="services--tech-desc flex-col">
+            <h4>Изготовление материалов</h4>
+            <p>Выбор подходящего материала является ключевым элементом для подготовки мебели. Бук, дуб, ясень и лиственница прочный фундамент, лежащий в основе творческого видения дизайнера.</p>
+          </div>
+          <div class="services--tech-desc flex-col">
+            <h4>Идеальная обработка мебели</h4>
+            <p>Древесина является идеальным материалом, подлежащего лечению. Благодаря природным свойствам можно придать практически любую форму. Всегда извлечь с натурального дерева счета и заботиться о деталях, так что мебель, которую мы создаем характеризуется простотой и элегантностью.</p>
+          </div>
+          <div class="services--tech-desc flex-col">
+            <h4>Технология</h4>
+            <p>Надлежащее обслуживание обеспечивает длительный эффект и защищает от поседения, обеспечивает защиту от плесени, водорослей и грибов, а также благодаря защитным фильтрам используются гидрофобной работа. Использование самого высокого качества масла, глазурей и лаков, пропитывающий делает дерево сохраняет свою естественную форму приятен на ощупь и красиво представлены.</p>
+          </div>
+          <div class="button-close second-btn flex-col" role="button" aria-label="button"><span class="background"></span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+<path d="M5.4 26.6c-5.8-5.8-5.8-15.4 0-21.2s15.4-5.8 21.2 0 5.8 15.4 0 21.2-15.4 5.9-21.2 0zM25.2 6.8c-5.1-5.1-13.3-5.1-18.4 0s-5.1 13.3 0 18.4 13.3 5.1 18.4 0 5.1-13.3 0-18.4z"/>
+<path d="M20.6 22L10 11.4c-.4-.4-.4-1 0-1.4.4-.4 1-.4 1.4 0L22 20.6c.4.4.4 1 0 1.4-.4.4-1 .4-1.4 0zM10 20.6l2.6-2.6c.4-.4 1-.4 1.4 0 .4.4.4 1 0 1.4L11.4 22c-.4.4-1 .4-1.4 0-.4-.4-.4-1 0-1.4zm8-8l2.6-2.6c.4-.4 1-.4 1.4 0 .4.4.4 1 0 1.4L19.4 14c-.4.4-1 .4-1.4 0-.4-.4-.4-1 0-1.4z"/>
+</svg>
+          </div>
         </div>
       </div>
     </section>

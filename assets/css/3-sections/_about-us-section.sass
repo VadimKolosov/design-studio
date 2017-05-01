@@ -10,7 +10,7 @@
     position: center center
     repeat: no-repeat
   overflow: hidden
-  @media(max-width: 736px) and (orientation: landscape)
+  @media(max-width: 736px)
     height: auto
 
   &--content-wrapper
@@ -80,7 +80,7 @@
     opacity: 0
     box-sizing: border-box
     padding: 149px 130px
-    @media(max-width: 1024px) and (orientation: landscape)
+    @media(max-width: 1024px) and (orientation: portrait)
       padding: 192px 20px
     @media(max-width: 736px) and (orientation: landscape)
       padding: 20px
@@ -144,6 +144,7 @@
 
 .active
   width: 400% !important
+  transition: .5s ease-in-out
 
 .active-image
   height: 60% !important
