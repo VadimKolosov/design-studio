@@ -18,6 +18,8 @@
 
   &--top-level
     justify-content: space-between
+    transform: translateY(30px)
+    opacity: 0
     @media (max-width: 1024px) and (orientation: portrait)
       position: absolute
     @media (max-width: 736px)
@@ -64,17 +66,25 @@
         padding-right: 0
 
   &--bottom-level
+    transform: translateY(30px)
+    opacity: 0
     justify-content: space-between
+    @media (max-width: 768px)
+      width: 100%
     @media (max-width: 1024px) and (orientation: portrait)
       width: 83.31%
     @media (max-width: 768px) and (orientation: landscape)
       padding-top: 200px
-      width: 100%
     @media (max-width: 768px) and (orientation: portrait)
-      padding-top: 80px
-    @media (max-width: 414px) and (orientation: portrait)
+      padding-top: 100px
+    @media (max-width: 568px) and (orientation: landscape)
       padding-top: 230px
-      width: 100%
+    @media (max-width: 667px) and (orientation: landscape)
+      padding-top: 240px
+    @media (max-width: 414px) and (orientation: portrait)
+      padding-top: 260px
+    @media (max-width: 320px) and (orientation: portrait)
+      padding-top: 290px
 
   &--headline-low
     position: relative
@@ -143,6 +153,8 @@
     @media (max-width: 736px) and (orientation: landscape)
       &::before
         display: none
+    @media (max-width: 568px) and (orientation: landscape)
+      margin-right: 30px
     @media (max-width: 414px) and (orientation: portrait)
       margin-right: 20px
       &::before

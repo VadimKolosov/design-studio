@@ -73,8 +73,16 @@ function slideUpContent() {
   $(window).scroll(function(){
     var wScroll = $(this).scrollTop();
     console.log($(window).scrollTop());
-    if (wScroll <= 300) {
+    if (wScroll > 300) {
       $('.about--list-content-wrapper, .about--main-content').each(function(i) {
+        var elm = $(this);
+        setTimeout(function() {
+          elm.addClass('slide-up');
+        }, i * 45);
+      });
+    }
+    if (wScroll > 960) {
+      $('.services--top-level, .services--bottom-level').each(function(i) {
         var elm = $(this);
         setTimeout(function() {
           elm.addClass('slide-up');

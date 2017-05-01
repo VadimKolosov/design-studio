@@ -470,6 +470,11 @@ p {
     p {
       line-height: 20px; } }
 
+a {
+  color: white; }
+  a:hover {
+    color: #ca9f72; }
+
 /*** =================================================================***/
 /*                            SNIPPETS                                  */
 /*** =================================================================***/
@@ -940,6 +945,9 @@ p {
     @media (max-width: 1024px) and (orientation: portrait) {
       .about--main-content {
         padding: 192px 20px; } }
+    @media (max-width: 1024px) and (orientation: landscape) {
+      .about--main-content {
+        padding: 150px 20px; } }
     @media (max-width: 736px) and (orientation: landscape) {
       .about--main-content {
         padding: 20px;
@@ -1026,7 +1034,11 @@ p {
   .services--top-level {
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
-    justify-content: space-between; }
+    justify-content: space-between;
+    -webkit-transform: translateY(30px);
+    -ms-transform: translateY(30px);
+    transform: translateY(30px);
+    opacity: 0; }
     @media (max-width: 1024px) and (orientation: portrait) {
       .services--top-level {
         position: absolute; } }
@@ -1084,23 +1096,37 @@ p {
         .services--description p {
           padding-right: 0; } }
   .services--bottom-level {
+    -webkit-transform: translateY(30px);
+    -ms-transform: translateY(30px);
+    transform: translateY(30px);
+    opacity: 0;
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
     justify-content: space-between; }
+    @media (max-width: 768px) {
+      .services--bottom-level {
+        width: 100%; } }
     @media (max-width: 1024px) and (orientation: portrait) {
       .services--bottom-level {
         width: 83.31%; } }
     @media (max-width: 768px) and (orientation: landscape) {
       .services--bottom-level {
-        padding-top: 200px;
-        width: 100%; } }
+        padding-top: 200px; } }
     @media (max-width: 768px) and (orientation: portrait) {
       .services--bottom-level {
-        padding-top: 80px; } }
+        padding-top: 100px; } }
+    @media (max-width: 568px) and (orientation: landscape) {
+      .services--bottom-level {
+        padding-top: 230px; } }
+    @media (max-width: 667px) and (orientation: landscape) {
+      .services--bottom-level {
+        padding-top: 240px; } }
     @media (max-width: 414px) and (orientation: portrait) {
       .services--bottom-level {
-        padding-top: 230px;
-        width: 100%; } }
+        padding-top: 260px; } }
+    @media (max-width: 320px) and (orientation: portrait) {
+      .services--bottom-level {
+        padding-top: 290px; } }
   .services--headline-low {
     position: relative;
     border-right: 1px solid white;
@@ -1173,6 +1199,9 @@ p {
     @media (max-width: 736px) and (orientation: landscape) {
       .services--example::before {
         display: none; } }
+    @media (max-width: 568px) and (orientation: landscape) {
+      .services--example {
+        margin-right: 30px; } }
     @media (max-width: 414px) and (orientation: portrait) {
       .services--example {
         margin-right: 20px; }
@@ -1315,3 +1344,109 @@ p {
 
 .show {
   display: block; }
+
+/*** =================================================================***/
+/*                          CONTACT SECTION                             */
+/*** =================================================================***/
+.contact {
+  height: 100vh;
+  background-color: #1a1e24;
+  overflow: hidden; }
+  @media (max-width: 736px) {
+    .contact {
+      height: auto; } }
+  .contact h2, .contact h3, .contact h4, .contact p, .contact li {
+    color: white; }
+  .contact--logo-headline {
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    border-right: 1px solid white;
+    height: 45%;
+    padding-bottom: 60px; }
+    .contact--logo-headline h2 {
+      margin-bottom: 20px; }
+  .contact--copyright {
+    height: 55%;
+    border-top: 1px solid white;
+    border-right: 1px solid white;
+    box-sizing: border-box;
+    padding-top: 60px; }
+    .contact--copyright p {
+      color: rgba(255, 255, 255, 0.5); }
+      .contact--copyright p:last-child {
+        font-size: 12px; }
+  .contact--form-content {
+    margin-top: 240px;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .contact--form-wrapper {
+    width: 600px;
+    box-sizing: border-box;
+    padding: 0 20px; }
+    .contact--form-wrapper h4 {
+      margin-bottom: 40px; }
+    .contact--form-wrapper input, .contact--form-wrapper textarea {
+      background-color: transparent;
+      border: none;
+      color: white;
+      border-bottom: 1px solid white;
+      padding: 10px;
+      margin-bottom: 10px;
+      outline: none;
+      resize: none; }
+      .contact--form-wrapper input::-webkit-input-placeholder, .contact--form-wrapper textarea::-webkit-input-placeholder {
+        font-size: 14px; }
+      .contact--form-wrapper input::-moz-placeholder, .contact--form-wrapper textarea::-moz-placeholder {
+        font-size: 14px; }
+      .contact--form-wrapper input:-ms-input-placeholder, .contact--form-wrapper textarea:-ms-input-placeholder {
+        font-size: 14px; }
+      .contact--form-wrapper input::placeholder, .contact--form-wrapper textarea::placeholder {
+        font-size: 14px; }
+      .contact--form-wrapper input:focus, .contact--form-wrapper textarea:focus {
+        border-bottom: 1px solid #ca9f72; }
+    .contact--form-wrapper button {
+      position: relative;
+      margin-top: 40px;
+      background-color: #ca9f72;
+      border: none;
+      padding: 16px 20px;
+      overflow: hidden;
+      font-weight: bold;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      cursor: pointer; }
+      .contact--form-wrapper button::before {
+        display: block;
+        content: '';
+        position: absolute;
+        left: -100%;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background-color: white;
+        transition: .3s ease-in-out; }
+      .contact--form-wrapper button span {
+        transition: .4s ease-in-out;
+        z-index: 1;
+        color: white; }
+      .contact--form-wrapper button svg {
+        z-index: 1;
+        width: 30px;
+        height: 20px; }
+        .contact--form-wrapper button svg path {
+          transition: .5s ease-in-out;
+          fill: white; }
+      .contact--form-wrapper button:hover span {
+        color: #ca9f72; }
+      .contact--form-wrapper button:hover svg path {
+        fill: #ca9f72; }
+      .contact--form-wrapper button:hover::before {
+        left: 0; }
+  .contact--map-wrapper {
+    background-color: red; }

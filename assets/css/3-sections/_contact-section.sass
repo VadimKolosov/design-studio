@@ -1,0 +1,102 @@
+/*** =================================================================***/
+/*                          CONTACT SECTION                             */
+/*** =================================================================***/
+
+.contact
+  height: 100vh
+  background-color: #1a1e24
+  overflow: hidden
+  @media(max-width: 736px)
+    height: auto
+
+  h2, h3, h4, p, li
+    color: $white
+
+  &--logo-headline
+    justify-content: space-between
+    border-right: 1px solid $white
+    height: 45%
+    padding-bottom: 60px
+
+    h2
+      margin-bottom: 20px
+
+  &--copyright
+    height: 55%
+    border-top: 1px solid $white
+    border-right: 1px solid $white
+    box-sizing: border-box
+    padding-top: 60px
+    p
+      color: transparentize($white, 0.5)
+      &:last-child
+        font-size: 12px
+
+  &--form-content
+    margin-top: 240px
+    align-items: center
+
+  &--form-wrapper
+    width: 600px
+    box-sizing: border-box
+    padding: 0 20px
+    h4
+      margin-bottom: 40px
+    input, textarea
+      background-color: transparent
+      border: none
+      color: $white
+      border-bottom: 1px solid $white
+      padding: 10px
+      margin-bottom: 10px
+      outline: none
+      resize: none
+      &::placeholder
+        font-size: 14px
+      &:focus
+        border-bottom: 1px solid $lightBrown
+
+    button
+      position: relative
+      margin-top: 40px
+      background-color: $lightBrown
+      border: none
+      padding: 16px 20px
+      overflow: hidden
+      font-weight: bold
+      display: flex
+      justify-content: space-between
+      cursor: pointer
+      &::before
+        display: block
+        content: ''
+        position: absolute
+        left: -100%
+        top: 0
+        height: 100%
+        width: 100%
+        background-color: $white
+        transition: .3s ease-in-out
+      span
+        transition: .4s ease-in-out
+        z-index: 1
+        color: $white
+      svg
+        z-index: 1
+        width: 30px
+        height: 20px
+        path
+          transition: .5s ease-in-out
+          fill: $white
+
+      &:hover
+        span
+          color: $lightBrown
+        svg
+          path
+            fill: $lightBrown
+        &::before
+          left: 0
+
+  &--map-wrapper
+    background-color: red
