@@ -3,6 +3,7 @@ $(document).ready(function() {
   aboutImage();
   closeButton();
   slideUpContent();
+  initMap();
 });
 
 function hamburgerMenu() {
@@ -55,6 +56,9 @@ function aboutImage() {
     $('.services--image-wrapper').addClass('active');
     $('.services--tech-desc').addClass('show-tech');
   });
+  $('.contact--api-fade').click(function() {
+    $('.contact--api').addClass('active');
+  });
 }
 
 function closeButton () {
@@ -90,4 +94,41 @@ function slideUpContent() {
       });
     }
   });
+}
+
+// GOOGLE MAP API
+function initMap() {
+  var myLatLng = {lat: 36.168577, lng: -115.285165};
+  var styledMapType = new google.maps.StyledMapType(
+    [{"stylers": [
+     { "saturation": -41 },
+     { "hue": "#ff8000" },
+     { "lightness": -6 },
+     { "gamma": 0.64 }]}],
+      {name: 'Styled Map'});
+
+  var map = new google.maps.Map(document.getElementById('map'), {
+    center: myLatLng,
+    // backgroundColor: '#cd955a',
+    zoom: 16,
+    disableDefaultUI: true,
+    mapTypeControlOptions: {
+    mapTypeIds: ['roadmap', 'styled_map']
+    }
+  });
+  // var designStudio = {
+  //   path: 'M17.7 10.3c-8.9 1-8.6 14.1.2 14.8 1.1 0 1.1.2 1.1-.2 0-.2 0-10.4.1-10.4h4.8c14 0 15 20.4 1.8 22.1 3.2-4.9-.5-11.5-6.2-11.4-.5-.1-.5-.2-.5.7 0 .1 0 14 .1 14.1h5.6c19.1-1 20.7-32.9-7-29.7zM25 49.5C11.5 49.5.5 38.6.5 25.1.5 11.6 11.5.7 25 .7s24.5 10.9 24.5 24.5c-.1 13.4-11 24.3-24.5 24.3zm0-45.1c-11.4 0-20.7 9.3-20.7 20.7S13.6 45.9 25 45.9s20.7-9.3 20.7-20.7S36.4 4.4 25 4.4zm-7.1 47.2H32l-7 5.7-7.1-5.7z',
+  //   fillColor: 'white',
+  //   fillOpacity: 1,
+  //   strokeColor: 'white',
+  //   strokeWeight: 0
+  //   };
+  // var marker = new google.maps.Marker({
+  //   position: {lat: 36.169, lng: -115.2859},
+  //   icon: designStudio,
+  //   animation: google.maps.Animation.BOUNCE,
+  //   map: map
+  // });
+  map.mapTypes.set('styled_map', styledMapType);
+  map.setMapTypeId('styled_map');
 }

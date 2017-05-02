@@ -526,6 +526,8 @@ a {
 .site-logo {
   width: 160px;
   padding-top: 40px; }
+  .site-logo svg path {
+    fill: white; }
   @media (max-width: 736px) and (orientation: landscape) {
     .site-logo {
       width: 120px; } }
@@ -1449,4 +1451,47 @@ a {
       .contact--form-wrapper button:hover::before {
         left: 0; }
   .contact--map-wrapper {
-    background-color: red; }
+    position: relative;
+    cursor: pointer; }
+
+@-webkit-keyframes bounce {
+  from {
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px); }
+  to {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px); } }
+
+@keyframes bounce {
+  from {
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px); }
+  to {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px); } }
+    .contact--map-wrapper:hover svg {
+      -webkit-animation: bounce .5s ease-in-out infinite alternate;
+      animation: bounce .5s ease-in-out infinite alternate; }
+    .contact--map-wrapper svg {
+      z-index: 1;
+      position: absolute;
+      top: calc(50% - 25px);
+      left: calc(50% - 25px);
+      width: 50px; }
+      .contact--map-wrapper svg path {
+        fill: white; }
+  .contact--api {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    transition: .5s ease-in-out; }
+  .contact--api-fade {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(202, 159, 114, 0.8); }
