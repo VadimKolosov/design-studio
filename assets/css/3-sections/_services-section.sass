@@ -29,6 +29,10 @@
     justify-content: space-between
     border-right: 1px solid $white
     height: 35%
+    @media(max-width: 768px) and (orientation: portrait)
+      border-right: none
+    @media(max-width: 736px)
+      border-right: none
 
   &--headline
     margin-bottom: 40px
@@ -279,9 +283,3 @@
     transform: rotate(45deg)
     .background
       background-color: $white
-
-.show-tech
-  display: block
-
-.show
-  display: block

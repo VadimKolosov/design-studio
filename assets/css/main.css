@@ -1011,13 +1011,6 @@ a {
       height: 25%;
       top: 75%; }
 
-.active {
-  width: 400% !important;
-  transition: .5s ease-in-out; }
-
-.active-image {
-  height: 60% !important; }
-
 /*** =================================================================***/
 /*                         SERVICES SECTION                             */
 /*** =================================================================***/
@@ -1053,6 +1046,12 @@ a {
     justify-content: space-between;
     border-right: 1px solid white;
     height: 35%; }
+    @media (max-width: 768px) and (orientation: portrait) {
+      .services--logo-headline {
+        border-right: none; } }
+    @media (max-width: 736px) {
+      .services--logo-headline {
+        border-right: none; } }
   .services--headline {
     margin-bottom: 40px; }
     @media (max-width: 1024px) and (orientation: portrait) {
@@ -1341,22 +1340,18 @@ a {
     .services .button-close .background {
       background-color: white; }
 
-.show-tech {
-  display: block; }
-
-.show {
-  display: block; }
-
 /*** =================================================================***/
 /*                          CONTACT SECTION                             */
 /*** =================================================================***/
 .contact {
   height: 100vh;
-  background-color: #1a1e24;
-  overflow: hidden; }
-  @media (max-width: 736px) {
+  background-color: #1a1e24; }
+  @media (max-width: 768px) {
     .contact {
-      height: auto; } }
+      height: 100%;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column; } }
   .contact h2, .contact h3, .contact h4, .contact p, .contact li {
     color: white; }
   .contact--logo-headline {
@@ -1366,14 +1361,34 @@ a {
     border-right: 1px solid white;
     height: 45%;
     padding-bottom: 60px; }
+    @media (max-width: 768px) {
+      .contact--logo-headline {
+        border-right: none; } }
     .contact--logo-headline h2 {
       margin-bottom: 20px; }
+      @media (max-width: 768px) {
+        .contact--logo-headline h2 {
+          margin-top: 40px; } }
   .contact--copyright {
+    position: relative;
     height: 55%;
     border-top: 1px solid white;
     border-right: 1px solid white;
     box-sizing: border-box;
     padding-top: 60px; }
+    @media (max-width: 768px) {
+      .contact--copyright {
+        border-right: none;
+        border-top: none;
+        padding-top: 0; }
+        .contact--copyright::before {
+          position: absolute;
+          top: -45%;
+          display: block;
+          content: '';
+          width: 180px;
+          height: 1px;
+          background-color: white; } }
     .contact--copyright p {
       color: rgba(255, 255, 255, 0.5); }
       .contact--copyright p:last-child {
@@ -1383,10 +1398,48 @@ a {
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center; }
+    @media (max-width: 1024px) and (orientation: landscape) {
+      .contact--form-content {
+        margin-top: 0;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center; } }
+    @media (max-width: 768px) {
+      .contact--form-content {
+        margin-top: 40px;
+        -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+        align-items: flex-start; } }
   .contact--form-wrapper {
     width: 600px;
     box-sizing: border-box;
     padding: 0 20px; }
+    @media (max-width: 1024px) and (orientation: portrait) {
+      .contact--form-wrapper {
+        width: 450px;
+        margin-bottom: 60px; } }
+    @media (max-width: 1024px) and (orientation: landscape) {
+      .contact--form-wrapper {
+        width: 450px; } }
+    @media (max-width: 768px) {
+      .contact--form-wrapper {
+        margin-bottom: 60px; } }
+    @media (max-width: 768px) and (orientation: portrait) {
+      .contact--form-wrapper {
+        padding: 0 40px; } }
+    @media (max-width: 414px) and (orientation: portrait) {
+      .contact--form-wrapper {
+        width: 400px;
+        padding: 0 20px; } }
+    @media (max-width: 375px) {
+      .contact--form-wrapper {
+        width: 375px; } }
+    @media (max-width: 360px) {
+      .contact--form-wrapper {
+        width: 360px; } }
+    @media (max-width: 320px) {
+      .contact--form-wrapper {
+        width: 320px; } }
     .contact--form-wrapper h4 {
       margin-bottom: 40px; }
     .contact--form-wrapper input, .contact--form-wrapper textarea {
@@ -1469,29 +1522,79 @@ a {
   to {
     -webkit-transform: translateY(0px);
     transform: translateY(0px); } }
-    .contact--map-wrapper:hover svg {
+    .contact--map-wrapper:hover .map-icon {
       -webkit-animation: bounce .5s ease-in-out infinite alternate;
       animation: bounce .5s ease-in-out infinite alternate; }
-    .contact--map-wrapper svg {
-      z-index: 1;
+    .contact--map-wrapper .map-icon {
+      z-index: 2;
       position: absolute;
       top: calc(50% - 25px);
       left: calc(50% - 25px);
       width: 50px; }
-      .contact--map-wrapper svg path {
+      .contact--map-wrapper .map-icon path {
         fill: white; }
+    @media (max-width: 768px) {
+      .contact--map-wrapper {
+        width: 100%;
+        height: 300px; } }
+    @media (max-width: 736px) and (orientation: landscape) {
+      .contact--map-wrapper {
+        width: 100%;
+        height: 300px; } }
   .contact--api {
+    z-index: 1;
     position: absolute;
     top: 0;
     right: 0;
     height: 100%;
     width: 100%;
     overflow: hidden;
-    transition: .5s ease-in-out; }
+    transition: .5s ease-in-out;
+    background-color: #ca9f72; }
+    @media (max-width: 768px) {
+      .contact--api {
+        background-color: transparent; }
+        .contact--api .button-close {
+          display: none; } }
   .contact--api-fade {
-    top: 0;
-    left: 0;
-    position: absolute;
+    z-index: 1;
+    position: relative;
     width: 100%;
     height: 100%;
-    background-color: rgba(202, 159, 114, 0.8); }
+    background-image: url("../img/contact-map-preview.jpg");
+    background-size: cover;
+    background-position: center center; }
+    .contact--api-fade::after {
+      display: block;
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(202, 159, 114, 0.85); }
+    @media (max-width: 768px) {
+      .contact--api-fade {
+        background-image: url("../img/contact-map-preview-mobile.jpg"); } }
+
+#map {
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  height: 100%; }
+
+/*** =================================================================***/
+/*                              STATES                                  */
+/*** =================================================================***/
+.active {
+  width: 400%;
+  transition: .5s ease-in-out; }
+
+/* About Section */
+.active-image {
+  height: 60% !important; }
+
+/* Section services */
+.show-tech {
+  display: block; }
+
+.show {
+  display: block !important; }
