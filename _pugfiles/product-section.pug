@@ -5,54 +5,77 @@
         include icons/logo-design-studio.pug
       .product--headline
         h2 Продукты
-    .product--category
-      h4 Категории
-      ul
-        li 
-          a(href="") Кровати
-        li 
-          a(href="") Шкафы
-        li 
-          a(href="") Стулья
-        li 
-          a(href="") Столы
+    .product--category.flex-col
+      .product--category-content
+        h4 Категории
+        .product--link-wrapper.flex-col
+          a(href="#" rel="all").product--href.active-category Вся мебель
+          a(href="#" rel="bed").product--href#link1 Кровати  
+          a(href="#" rel="chest").product--href#link2 Шкафы
+          a(href="#" rel="chair").product--href#link3 Стулья
+          a(href="#" rel="table").product--href#link4 Столы
+          .product--svg
+            include icons/product-bed.pug
+            include icons/product-chest.pug
+            include icons/product-table.pug
+            include icons/product-chair.pug
+        
   .product--production-wrapper.flex-row.col-x4
-    article
+    article.card-bed.card
       .product--image
-        img(src="assets/img/product-image/bed-1.jpg")
-      .product--desc-wrapper.flex-col
-        h5 Мальм
-        a(href="#") Кровати
-    article
+        a(href="#")
+          img(src="assets/img/product-image/bed-1.jpg")
+      .product--desc-wrapper.flex-row
+        .product--name-href
+          h5 Мальм
+          a(href="#") Кровати
+        a(href="#").price 2499$
+    article.card-bed.card
       .product--image
-        img(src="assets/img/product-image/bed-2.jpg")
-      .product--desc-wrapper.flex-col
-        h5 Мальм
-        a(href="#") Кровати
-    article
+        a(href="#")
+          img(src="assets/img/product-image/bed-2.jpg")
+      .product--desc-wrapper.flex-row
+        .product--name-href
+          h5 Мальм
+          a(href="#") Кровати
+        a(href="#").price 2499$
+    article.card-bed.card
       .product--image
-        img(src="assets/img/product-image/bed-3.jpg")
-      .product--desc-wrapper.flex-col
-        h5 Мальм
-        a(href="#") Кровати
-    article
+        a(href="#")
+          img(src="assets/img/product-image/bed-3.jpg")
+      .product--desc-wrapper.flex-row
+        .product--name-href
+          h5 Мальм
+          a(href="#") Кровати
+        a(href="#").price 2499$
+    article.card-chair.card
       .product--image
-        img(src="assets/img/product-image/chair-1.jpg")
-      .product--desc-wrapper.flex-col
-        h5 Мальм
-        a(href="#") Кровати
-    article
+        a(href="#")
+          img(src="assets/img/product-image/chair-1.jpg")
+      .product--desc-wrapper.flex-row
+        .product--name-href
+          h5 Мальм
+          a(href="#") Кровати
+        a(href="#").price 2499$
+    article.card-chair.card
       .product--image
-        img(src="assets/img/product-image/chair-2.jpg")
-      .product--desc-wrapper.flex-col
-        h5 Мальм
-        a(href="#") Кровати
-    article
+        a(href="#")
+          img(src="assets/img/product-image/chair-2.jpg")
+      .product--desc-wrapper.flex-row
+        .product--name-href
+          h5 Мальм
+          a(href="#") Кровати
+        a(href="#").price 2499$
+    article.card-chair.card
       .product--image
-        img(src="assets/img/product-image/chair-3.jpg")
-      .product--desc-wrapper.flex-col
-        h5 Мальм
-        a(href="#") Кровати
+        a(href="#")
+          img(src="assets/img/product-image/chair-3.jpg")
+      .product--desc-wrapper.flex-row
+        .product--name-href
+          h5 Мальм
+          a(href="#") Кровати
+        a(href="#").price 2499$
+    
     
 
       

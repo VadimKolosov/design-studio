@@ -6,19 +6,22 @@
   height: 100vh
   background-color: $lightGrey
 
-  &--left-content
-
   &--logo-headline
+    height: 45%
     .site-logo
       margin-bottom: 100px
       svg
         path
           fill: $black
 
-  &--headline
-    margin-bottom: 50px
-
   &--category
+    height: 100%
+    justify-content: space-between
+
+  &--category-content
+    ul
+      // background-color: green
+      // height: 61.5vh
     h4
       position: relative
       margin-bottom: 30px
@@ -36,6 +39,14 @@
       transition: .1s ease-in-out
       &:hover
         color: $lightBrown
+    svg
+      width: 100px
+      path
+        fill: darken($lightGrey, 20%)
+
+  &--svg
+    margin-top: 60px
+
 
   &--production-wrapper
     overflow-y: scroll
@@ -47,21 +58,39 @@
     margin: 10px
     width: 300px
     height: 380px
+    transition: .3s ease-in-out
+    &:hover
+      box-shadow: 0 0 8px 0 lighten($black, 85%)
 
   &--image
+    overflow: hidden
     img
       display: block
       width: 100%
       height: 310px
       margin: 0
       padding: 0
+      transition: .3s ease-in-out
+    &:hover img
+     transform: scale(1.02)
 
   &--desc-wrapper
     height: 70px
     box-sizing: border-box
-    padding: 0 20px
-    justify-content: center
-    background-color: darken($lightGrey, 10%)
+    padding: 10px 20px
+    justify-content: space-between
+    background-color: $white
     a
       color: $lightBrown
       font-size: 12px
+    .price
+      color: $white
+      background-color: darken($lightBrown, 20%)
+      align-self: center
+      font-weight: bold
+      padding: 5px 10px
+      border-radius: 2px
+      transition: .2s ease-in-out
+      &:hover
+        background-color: $lightBrown
+        color: $white
