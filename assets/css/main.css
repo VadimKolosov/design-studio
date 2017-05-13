@@ -538,6 +538,11 @@ a {
     .site-logo {
       width: 120px; } }
 
+.hide {
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0); }
+
 /*** =================================================================***/
 /*                           MENU BUTTON                                */
 /*** =================================================================***/
@@ -1399,6 +1404,8 @@ a {
     width: 300px;
     height: 380px;
     transition: .3s ease-in-out; }
+    .product article .card {
+      transition: .3s ease-in-out; }
     .product article:hover {
       box-shadow: 0 0 8px 0 #d9d9d9; }
   .product--image {

@@ -114,9 +114,19 @@ function categorySort() {
     event.preventDefault();
     $('.product--href').removeClass('active-category');
     $(this).addClass('active-category');
-    var target = $(this).attr('rel');
-    $('.card-' + target).show(300).siblings().hide();
-    return false;
+    var category = $(this).attr('id');
+    console.log(category);
+    if(category == 'all') {
+      $('.card').addClass('hide');
+      setTimeout(function() {
+        $('.card').removeClass('hide')
+      }, 150);
+    } else {
+      $('.card').addClass('hide');
+      setTimeout(function() {
+        $('.' + category).removeClass('hide')
+      }, 150);
+    }
   });
 }
 

@@ -9,11 +9,11 @@
       .product--category-content
         h4 Категории
         .product--link-wrapper.flex-col
-          a(href="#" rel="all").product--href.active-category Вся мебель
-          a(href="#" rel="bed").product--href#link1 Кровати  
-          a(href="#" rel="chest").product--href#link2 Шкафы
-          a(href="#" rel="chair").product--href#link3 Стулья
-          a(href="#" rel="table").product--href#link4 Столы
+          a(href="#" rel="all").product--href.active-category#all Вся мебель
+          a(href="#" rel="bed").product--href#bed Кровати  
+          a(href="#" rel="chest").product--href#chest Шкафы
+          a(href="#" rel="chair").product--href#chair Стулья
+          a(href="#" rel="table").product--href#table Столы
           .product--svg
             include icons/product-bed.pug
             include icons/product-chest.pug
@@ -21,7 +21,7 @@
             include icons/product-chair.pug
         
   .product--production-wrapper.flex-row.col-x4
-    article.card-bed.card
+    article.bed.card
       .product--image
         a(href="#")
           img(src="assets/img/product-image/bed-1.jpg")
@@ -30,7 +30,7 @@
           h5 Мальм
           a(href="#") Кровати
         a(href="#").price 2499$
-    article.card-bed.card
+    article.bed.card
       .product--image
         a(href="#")
           img(src="assets/img/product-image/bed-2.jpg")
@@ -39,7 +39,7 @@
           h5 Мальм
           a(href="#") Кровати
         a(href="#").price 2499$
-    article.card-bed.card
+    article.bed.card
       .product--image
         a(href="#")
           img(src="assets/img/product-image/bed-3.jpg")
@@ -48,7 +48,7 @@
           h5 Мальм
           a(href="#") Кровати
         a(href="#").price 2499$
-    article.card-chair.card
+    article.chair.card
       .product--image
         a(href="#")
           img(src="assets/img/product-image/chair-1.jpg")
@@ -57,7 +57,7 @@
           h5 Мальм
           a(href="#") Кровати
         a(href="#").price 2499$
-    article.card-chair.card
+    article.chair.card
       .product--image
         a(href="#")
           img(src="assets/img/product-image/chair-2.jpg")
@@ -66,7 +66,7 @@
           h5 Мальм
           a(href="#") Кровати
         a(href="#").price 2499$
-    article.card-chair.card
+    article.chair.card
       .product--image
         a(href="#")
           img(src="assets/img/product-image/chair-3.jpg")
