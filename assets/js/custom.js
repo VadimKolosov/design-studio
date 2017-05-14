@@ -5,6 +5,7 @@ $(document).ready(function() {
   slideUpContent();
   categoryPreview();
   categorySort();
+  sixArticles();
 });
 
 function hamburgerMenu() {
@@ -102,11 +103,32 @@ function categoryPreview() {
   $('.product-svg').hide(300);
   $('.product--href').hover(function() {
     var id = $(this).attr("id");
-    $("#product-svg-" + id.charAt(id.length - 1)).show();
+    $("#product-svg-" + id).show();
   }, function() {
     var id = $(this).attr("id");
-    $("#product-svg-" + id.charAt(id.length - 1)).hide();
+    $("#product-svg-" + id).hide();
   });
+}
+
+function sixArticles() {
+  var $allHref = $('#all');
+  if ($allHref.hasClass('active-category')) {
+    var container = document.querySelector('.product--production-wrapper');
+    var articles = Array.apply(null, container.querySelectorAll('article'));
+
+    var m = articles.length, t ,i;
+
+    while (m) {
+      i = Math.floor(Math.random() * m--);
+      t = articles[m];
+      articles[m] = articles[i];
+      articles[i] = t;
+    	container.removeChild(articles[m]);
+    }
+
+    while (m < 6)
+      container.appendChild(articles[m++]);
+  }
 }
 
 function categorySort() {
@@ -115,7 +137,6 @@ function categorySort() {
     $('.product--href').removeClass('active-category');
     $(this).addClass('active-category');
     var category = $(this).attr('id');
-    console.log(category);
     if(category == 'all') {
       $('.card').addClass('hide');
       setTimeout(function() {
@@ -128,7 +149,7 @@ function categorySort() {
       }, 150);
     }
   });
-}
+  }
 
 
 function initMap(){

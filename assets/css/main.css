@@ -541,7 +541,9 @@ a {
 .hide {
   -webkit-transform: scale(0);
   -ms-transform: scale(0);
-  transform: scale(0); }
+  transform: scale(0);
+  opacity: 0;
+  display: none; }
 
 /*** =================================================================***/
 /*                           MENU BUTTON                                */
