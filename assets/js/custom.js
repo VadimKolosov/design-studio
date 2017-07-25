@@ -5,7 +5,7 @@ $(document).ready(function() {
   slideUpContent();
   categoryPreview();
   categorySort();
-  sixArticles();
+  buyCart();
 });
 
 function hamburgerMenu() {
@@ -110,47 +110,32 @@ function categoryPreview() {
   });
 }
 
-function sixArticles() {
-  var $allHref = $('#all');
-  if ($allHref.hasClass('active-category')) {
-    var container = document.querySelector('.product--production-wrapper');
-    var articles = Array.apply(null, container.querySelectorAll('article'));
-
-    var m = articles.length, t ,i;
-
-    while (m) {
-      i = Math.floor(Math.random() * m--);
-      t = articles[m];
-      articles[m] = articles[i];
-      articles[i] = t;
-    	container.removeChild(articles[m]);
-    }
-
-    while (m < 6)
-      container.appendChild(articles[m++]);
-  }
-}
-
 function categorySort() {
+  $('.product-svg').hide(300);
+  $('article').slice(6, 24).addClass('hide');
   $('.product--href').click(function() {
     event.preventDefault();
+    var id = $(this).attr("id");
     $('.product--href').removeClass('active-category');
     $(this).addClass('active-category');
     var category = $(this).attr('id');
-    if(category == 'all') {
-      $('.card').addClass('hide');
-      setTimeout(function() {
-        $('.card').removeClass('hide')
-      }, 150);
-    } else {
-      $('.card').addClass('hide');
+    $("#product-svg-" + id).show();
+    $('.card').addClass('hide');
       setTimeout(function() {
         $('.' + category).removeClass('hide')
       }, 150);
-    }
   });
-  }
+}
 
+function buyCart() {
+  $('.price').hover(function() {
+    $('.product-basket').css({'transform' : 'scale(1)',
+                              'border-radius' : '0'});
+  }, function() {
+    $('.product-basket').css({'transform' : 'scale(0)',
+                              'border-radius' : '50%'});
+  });
+}
 
 function initMap(){
   $('.contact--api-fade').click(function() {

@@ -9,11 +9,10 @@
       .product--category-content
         h4 Категории
         .product--link-wrapper.flex-col
-          a(href="#" rel="all").product--href.active-category#all Вся мебель
-          a(href="#" rel="bed").product--href#bed Кровати  
-          a(href="#" rel="chest").product--href#chest Шкафы
-          a(href="#" rel="chair").product--href#chair Стулья
-          a(href="#" rel="table").product--href#table Столы
+          a(href="#").product--href.active-category#bed Кровати
+          a(href="#").product--href#drawer Комоды
+          a(href="#").product--href#chair Стулья
+          a(href="#").product--href#table Столы
           .product--svg
             include icons/product-bed.pug
             include icons/product-chest.pug
@@ -21,226 +20,53 @@
             include icons/product-chair.pug
         
   .product--production-wrapper.flex-row.col-x4
-    article.bed.card
-      .product--image
-        a(href="#")
-          img(src="assets/img/product-image/bed-1.jpg")
-      .product--desc-wrapper.flex-row
-        .product--name-href
-          h5 Мальм
-          a(href="#") Кровати
-        a(href="#").price 2499$
-    article.bed.card
-      .product--image
-        a(href="#")
-          img(src="assets/img/product-image/bed-2.jpg")
-      .product--desc-wrapper.flex-row
-        .product--name-href
-          h5 Мальм
-          a(href="#") Кровати
-        a(href="#").price 2499$
-    article.bed.card
-      .product--image
-        a(href="#")
-          img(src="assets/img/product-image/bed-3.jpg")
-      .product--desc-wrapper.flex-row
-        .product--name-href
-          h5 Мальм
-          a(href="#") Кровати
-        a(href="#").price 2499$
-    article.bed.card
-      .product--image
-        a(href="#")
-          img(src="assets/img/product-image/chair-1.jpg")
-      .product--desc-wrapper.flex-row
-        .product--name-href
-          h5 Мальм
-          a(href="#") Кровати
-        a(href="#").price 2499$
-    article.bed.card
-      .product--image
-        a(href="#")
-          img(src="assets/img/product-image/chair-2.jpg")
-      .product--desc-wrapper.flex-row
-        .product--name-href
-          h5 Мальм
-          a(href="#") Кровати
-        a(href="#").price 2499$
-    article.bed.card
-      .product--image
-        a(href="#")
-          img(src="assets/img/product-image/chair-3.jpg")
-      .product--desc-wrapper.flex-row
-        .product--name-href
-          h5 Мальм
-          a(href="#") Кровати
-        a(href="#").price 2499$
-    article.chest.card
-      .product--image
-        a(href="#")
-          img(src="assets/img/product-image/bed-1.jpg")
-      .product--desc-wrapper.flex-row
-        .product--name-href
-          h5 Мальм
-          a(href="#") Кровати
-        a(href="#").price 2499$
-    article.chest.card
-      .product--image
-        a(href="#")
-          img(src="assets/img/product-image/bed-2.jpg")
-      .product--desc-wrapper.flex-row
-        .product--name-href
-          h5 Мальм
-          a(href="#") Кровати
-        a(href="#").price 2499$
-    article.chest.card
-      .product--image
-        a(href="#")
-          img(src="assets/img/product-image/bed-3.jpg")
-      .product--desc-wrapper.flex-row
-        .product--name-href
-          h5 Мальм
-          a(href="#") Кровати
-        a(href="#").price 2499$
-    article.chest.card
-      .product--image
-        a(href="#")
-          img(src="assets/img/product-image/chair-1.jpg")
-      .product--desc-wrapper.flex-row
-        .product--name-href
-          h5 Мальм
-          a(href="#") Кровати
-        a(href="#").price 2499$
-    article.chest.card
-      .product--image
-        a(href="#")
-          img(src="assets/img/product-image/chair-2.jpg")
-      .product--desc-wrapper.flex-row
-        .product--name-href
-          h5 Мальм
-          a(href="#") Кровати
-        a(href="#").price 2499$
-    article.chest.card
-      .product--image
-        a(href="#")
-          img(src="assets/img/product-image/chair-3.jpg")
-      .product--desc-wrapper.flex-row
-        .product--name-href
-          h5 Мальм
-          a(href="#") Кровати
-        a(href="#").price 2499$
-    article.chair.card
-      .product--image
-        a(href="#")
-          img(src="assets/img/product-image/bed-1.jpg")
-      .product--desc-wrapper.flex-row
-        .product--name-href
-          h5 Мальм
-          a(href="#") Кровати
-        a(href="#").price 2499$
-    article.chair.card
-      .product--image
-        a(href="#")
-          img(src="assets/img/product-image/bed-2.jpg")
-      .product--desc-wrapper.flex-row
-        .product--name-href
-          h5 Мальм
-          a(href="#") Кровати
-        a(href="#").price 2499$
-    article.chair.card
-      .product--image
-        a(href="#")
-          img(src="assets/img/product-image/bed-3.jpg")
-      .product--desc-wrapper.flex-row
-        .product--name-href
-          h5 Мальм
-          a(href="#") Кровати
-        a(href="#").price 2499$
-    article.chair.card
-      .product--image
-        a(href="#")
-          img(src="assets/img/product-image/chair-1.jpg")
-      .product--desc-wrapper.flex-row
-        .product--name-href
-          h5 Мальм
-          a(href="#") Кровати
-        a(href="#").price 2499$
-    article.chair.card
-      .product--image
-        a(href="#")
-          img(src="assets/img/product-image/chair-2.jpg")
-      .product--desc-wrapper.flex-row
-        .product--name-href
-          h5 Мальм
-          a(href="#") Кровати
-        a(href="#").price 2499$
-    article.chair.card
-      .product--image
-        a(href="#")
-          img(src="assets/img/product-image/chair-3.jpg")
-      .product--desc-wrapper.flex-row
-        .product--name-href
-          h5 Мальм
-          a(href="#") Кровати
-        a(href="#").price 2499$
-    article.table.card
-      .product--image
-        a(href="#")
-          img(src="assets/img/product-image/bed-1.jpg")
-      .product--desc-wrapper.flex-row
-        .product--name-href
-          h5 Мальм
-          a(href="#") Кровати
-        a(href="#").price 2499$
-    article.table.card
-      .product--image
-        a(href="#")
-          img(src="assets/img/product-image/bed-2.jpg")
-      .product--desc-wrapper.flex-row
-        .product--name-href
-          h5 Мальм
-          a(href="#") Кровати
-        a(href="#").price 2499$
-    article.table.card
-      .product--image
-        a(href="#")
-          img(src="assets/img/product-image/bed-3.jpg")
-      .product--desc-wrapper.flex-row
-        .product--name-href
-          h5 Мальм
-          a(href="#") Кровати
-        a(href="#").price 2499$
-    article.table.card
-      .product--image
-        a(href="#")
-          img(src="assets/img/product-image/chair-1.jpg")
-      .product--desc-wrapper.flex-row
-        .product--name-href
-          h5 Мальм
-          a(href="#") Кровати
-        a(href="#").price 2499$
-    article.table.card
-      .product--image
-        a(href="#")
-          img(src="assets/img/product-image/chair-2.jpg")
-      .product--desc-wrapper.flex-row
-        .product--name-href
-          h5 Мальм
-          a(href="#") Кровати
-        a(href="#").price 2499$
-    article.table.card
-      .product--image
-        a(href="#")
-          img(src="assets/img/product-image/chair-3.jpg")
-      .product--desc-wrapper.flex-row
-        .product--name-href
-          h5 Мальм
-          a(href="#") Кровати
-        a(href="#").price 2499$
-        
-    
-    
-
-      
-
+    - for (var i = 0; i < 6; i++)
+    - var imagePath = ('assets/img/product-image/')
+    each item in [ {image: 'bed-1.jpg', price: '1999$', name: 'Хемнэс'}, {image: 'bed-2.jpg', price: '3400$', name: 'Брусали'}, {image: 'bed-3.jpg', price: '999$', name: 'Копардаль'}, {image: 'bed-4.jpg', price: '7000$', name: 'Опланд'}, {image: 'bed-5.jpg', price: '3222$', name: 'Ундредаль'}, {image: 'bed-6.jpg', price: '12000$', name: 'Аскволь'} ]
+      article.bed.card
+        .product--image
+          a(href="#"): img(src= imagePath + item.image)
+          .product-basket
+            include icons/product-basket.pug
+        .product--desc-wrapper.flex-row
+          .product--name-href
+            h5= item.name
+            a(href="#") Кровати
+          a(href="#").price= item.price
           
+          
+    - for (var i = 0; i < 6; i++)
+    - var imagePath = ('assets/img/product-image/')
+    each item in [ {image: 'drawer-1.jpg', price: '3500$', name: 'Пакс'}, {image: 'drawer-2.jpg', price: '3400$', name: 'Бримнес'}, {image: 'drawer-3.jpg', price: '780$', name: 'Метод'}, {image: 'drawer-4.jpg', price: '500$', name: 'Гурдар'}, {image: 'drawer-5.jpg', price: '6060$', name: 'Сильверон'}, {image: 'drawer-6.jpg', price: '1800$', name: 'Марс'} ]
+      article.drawer.card
+        .product--image
+          a(href="#"): img(src= imagePath + item.image)
+        .product--desc-wrapper.flex-row
+          .product--name-href
+            h5= item.name
+            a(href="#") Комоды
+          a(href="#").price= item.price
+          
+    - for (var i = 0; i < 6; i++)
+    - var imagePath = ('assets/img/product-image/')
+    each item in [ {image: 'chair-1.jpg', price: '1999$', name: 'Каустби'}, {image: 'chair-2.jpg', price: '3400$', name: 'Эльмста'}, {image: 'chair-3.jpg', price: '999$', name: 'Ивар'}, {image: 'chair-4.jpg', price: '7000$', name: 'Харри'}, {image: 'chair-5.jpg', price: '3222$', name: 'Хенриксдаль'}, {image: 'chair-6.jpg', price: '12000$', name: 'Лерхамн'} ]
+      article.chair.card
+        .product--image
+          a(href="#"): img(src= imagePath + item.image)
+        .product--desc-wrapper.flex-row
+          .product--name-href
+            h5= item.name
+            a(href="#") Стулья
+          a(href="#").price= item.price
+          
+    - for (var i = 0; i < 6; i++)
+    - var imagePath = ('assets/img/product-image/')
+    each item in [ {image: 'table-1.jpg', price: '1999$', name: 'Норберг'}, {image: 'table-2.jpg', price: '3400$', name: 'Лиаторп'}, {image: 'table-3.jpg', price: '999$', name: 'Тодалем'}, {image: 'table-4.jpg', price: '7000$', name: 'Ресо'}, {image: 'table-5.jpg', price: '3222$', name: 'Скрутт'}, {image: 'table-6.jpg', price: '12000$', name: 'Алекс'} ]
+      article.table.card
+        .product--image
+          a(href="#"): img(src= imagePath + item.image)
+        .product--desc-wrapper.flex-row
+          .product--name-href
+            h5= item.name
+            a(href="#") Столы
+          a(href="#").price= item.price

@@ -160,11 +160,11 @@
         <div class="product--category flex-col">
           <div class="product--category-content">
             <h4>Категории</h4>
-            <div class="product--link-wrapper flex-col"><a class="product--href active-category" href="#" rel="all" id="all">Вся мебель</a><a class="product--href" href="#" rel="bed" id="bed">Кровати  </a><a class="product--href" href="#" rel="chest" id="chest">Шкафы</a><a class="product--href" href="#" rel="chair" id="chair">Стулья</a><a class="product--href" href="#" rel="table" id="table">Столы</a>
+            <div class="product--link-wrapper flex-col"><a class="product--href active-category" href="#" id="bed">Кровати</a><a class="product--href" href="#" id="drawer">Комоды</a><a class="product--href" href="#" id="chair">Стулья</a><a class="product--href" href="#" id="table">Столы</a>
               <div class="product--svg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 482.924 482.924" id="product-svg-bed" class="product-svg">
 <path d="M54.98 180.626c0-25.204 20.504-45.71 45.71-45.71h102.607c15.933 0 29.98 8.2 38.165 20.595 8.185-12.39 22.232-20.59 38.165-20.59h102.61c25.203 0 45.708 20.51 45.708 45.71v2.11h11.443v-44.58c0-27.66-22.503-50.162-50.163-50.162H93.698c-27.66 0-50.163 22.503-50.163 50.163v44.57h11.443v-2.107zm408.732 23.45h-444.5C8.617 204.076 0 212.694 0 223.286V334.81c0 10.595 8.618 19.213 19.21 19.213h7.998l-9.45 26.668c-1.968 5.56.94 11.66 6.496 13.63 1.18.42 2.382.62 3.565.62 4.39 0 8.5-2.733 10.06-7.11l11.97-33.8h383.22l11.97 33.8c1.55 4.377 5.664 7.11 10.06 7.11 1.18 0 2.384-.2 3.563-.617 5.555-1.97 8.463-8.07 6.494-13.624l-9.45-26.67h8c10.59 0 19.21-8.618 19.21-19.21V223.29c0-10.593-8.62-19.21-19.21-19.21z"/>
 <path d="M279.627 156.262c-13.434 0-24.364 10.93-24.364 24.363v2.105H406.6v-2.105c0-13.434-10.93-24.363-24.364-24.363h-102.61zm-178.937 0c-13.436 0-24.365 10.93-24.365 24.364v2.104H227.66v-2.105c0-13.434-10.928-24.363-24.363-24.363H100.69z"/>
-</svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 492 492" id="product-svg-chest" class="product-svg">
+</svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 492 492" id="product-svg-drawer" class="product-svg">
 <path d="M484.5 79.5c-5-5-11.167-7.5-18.5-7.5H26c-6.667 0-12.667 2.5-18 7.5S0 90.333 0 97s2.667 12.667 8 18 11.333 8 18 8h6v51h429v-51h5c7.333 0 13.5-2.667 18.5-8s7.5-11.333 7.5-18-2.5-12.5-7.5-17.5zM255 145c-2.667 2.667-5.667 4-9 4s-6.333-1.333-9-4-4-5.833-4-9.5 1.333-6.833 4-9.5 5.667-4 9-4 6.333 1.333 9 4c2.667 2.67 4 5.838 4 9.5 0 3.67-1.333 6.836-4 9.5zM32 276h429v-81H32v81zm205-51c2.667-2.667 5.667-4 9-4s6.333 1.333 9 4 4 5.833 4 9.5-1.333 6.833-4 9.5-5.667 4-9 4-6.333-1.333-9-4c-2.667-2.668-4-5.835-4-9.5 0-3.667 1.333-6.834 4-9.5zM32 347v60c0 8.667 2.667 13 8 13h52c6.667 0 10-4.333 10-13v-38h289v38c0 8.667 3 13 9 13h52c6 0 9-4.333 9-13V297H32v50zm205-22.5c2.667-2.333 5.667-3.5 9-3.5s6.333 1.167 9 3.5 4 5.333 4 9-1.333 6.833-4 9.5-5.667 4-9 4-6.333-1.333-9-4-4-5.833-4-9.5 1.333-6.667 4-9z"/>
 </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26" id="product-svg-table" class="product-svg">
 <path d="M25.484 7.114l-4.278-3.917C21.034 3.07 20.826 3 20.61 3H5.38c-.215 0-.424.07-.597.197l-4.38 4S0 7.453 0 8v2c0 .55.45 1 1 1h24c.55 0 1-.45 1-1V8c0-.53-.516-.886-.516-.886z"/>
@@ -179,195 +179,237 @@
       </div>
       <div class="product--production-wrapper flex-row col-x4">
         <article class="bed card">
-          <div class="product--image"><a href="#"><img src="assets/img/product-image/bed-1.jpg"></a></div>
+          <div class="product--image"><a href="#"><img src="assets/img/product-image/bed-1.jpg"></a>
+            <div class="product-basket"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1600">
+<path d="M150.26 300.522c-9.22 0-16.695 7.475-16.695 16.696V384c0 9.22 7.475 16.696 16.696 16.696s16.7-7.476 16.7-16.696v-66.783c0-9.22-7.47-16.695-16.69-16.695zm100.175 0c-9.22 0-16.696 7.475-16.696 16.696V384c0 9.22 7.47 16.696 16.69 16.696 9.22 0 16.693-7.475 16.693-16.696v-66.783c0-9.22-7.476-16.695-16.696-16.695z"/>
+<path d="M459.808 297.84l5.118-30.71h19.248c9.22 0 16.696-7.475 16.696-16.696v-33.39c0-27.62-22.47-50.088-50.087-50.088h-16.696V83.478C434.087 37.448 396.64 0 350.61 0H150.26c-46.03 0-83.477 37.448-83.477 83.478v83.478H50.087C22.47 166.956 0 189.426 0 217.043v33.39c0 9.22 7.475 16.697 16.696 16.697h19.248L62.36 425.625c4.043 24.25 24.82 41.853 49.406 41.853h191.646c21.42 27.1 54.573 44.522 91.718 44.522C459.572 512 512 459.572 512 395.13c0-40.54-20.754-76.322-52.192-97.29zM100.174 83.477c0-27.618 22.47-50.087 50.087-50.087h200.35c27.62 0 50.09 22.47 50.09 50.088v83.478h-33.39V83.478c0-9.22-7.472-16.696-16.693-16.696H150.26c-9.22 0-16.695 7.475-16.695 16.696v83.478h-33.39V83.478zm233.74 16.696v66.783H166.956v-66.783h166.956zM33.39 233.74v-16.697c0-9.206 7.49-16.696 16.697-16.696h400.696c9.206 0 16.696 7.49 16.696 16.696v16.696H33.39zm251.556 200.347h-173.18c-8.196 0-15.122-5.867-16.47-13.95l-25.5-153.007h361.278l-2.66 15.967c-10.554-3.14-21.723-4.836-33.283-4.836-64.44 0-116.87 52.43-116.87 116.87 0 13.66 2.37 26.77 6.69 38.96zM395.13 478.61c-46.03 0-83.478-37.45-83.478-83.48s37.448-83.477 83.478-83.477 83.478 37.448 83.478 83.478-37.448 83.48-83.478 83.48z"/>
+<path d="M428.522 378.435h-16.696V361.74c0-9.22-7.475-16.697-16.696-16.697s-16.696 7.475-16.696 16.696v16.69h-16.696c-9.22 0-16.696 7.472-16.696 16.693s7.475 16.696 16.696 16.696h16.696v16.696c0 9.22 7.475 16.695 16.696 16.695s16.696-7.476 16.696-16.697V411.82h16.696c9.22 0 16.696-7.474 16.696-16.695s-7.476-16.695-16.696-16.695z"/>
+</svg>
+            </div>
+          </div>
           <div class="product--desc-wrapper flex-row">
             <div class="product--name-href">
-              <h5>Мальм</h5><a href="#">Кровати</a>
-            </div><a class="price" href="#">2499$</a>
+              <h5>Хемнэс</h5><a href="#">Кровати</a>
+            </div><a class="price" href="#">1999$</a>
           </div>
         </article>
         <article class="bed card">
-          <div class="product--image"><a href="#"><img src="assets/img/product-image/bed-2.jpg"></a></div>
+          <div class="product--image"><a href="#"><img src="assets/img/product-image/bed-2.jpg"></a>
+            <div class="product-basket"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1600">
+<path d="M150.26 300.522c-9.22 0-16.695 7.475-16.695 16.696V384c0 9.22 7.475 16.696 16.696 16.696s16.7-7.476 16.7-16.696v-66.783c0-9.22-7.47-16.695-16.69-16.695zm100.175 0c-9.22 0-16.696 7.475-16.696 16.696V384c0 9.22 7.47 16.696 16.69 16.696 9.22 0 16.693-7.475 16.693-16.696v-66.783c0-9.22-7.476-16.695-16.696-16.695z"/>
+<path d="M459.808 297.84l5.118-30.71h19.248c9.22 0 16.696-7.475 16.696-16.696v-33.39c0-27.62-22.47-50.088-50.087-50.088h-16.696V83.478C434.087 37.448 396.64 0 350.61 0H150.26c-46.03 0-83.477 37.448-83.477 83.478v83.478H50.087C22.47 166.956 0 189.426 0 217.043v33.39c0 9.22 7.475 16.697 16.696 16.697h19.248L62.36 425.625c4.043 24.25 24.82 41.853 49.406 41.853h191.646c21.42 27.1 54.573 44.522 91.718 44.522C459.572 512 512 459.572 512 395.13c0-40.54-20.754-76.322-52.192-97.29zM100.174 83.477c0-27.618 22.47-50.087 50.087-50.087h200.35c27.62 0 50.09 22.47 50.09 50.088v83.478h-33.39V83.478c0-9.22-7.472-16.696-16.693-16.696H150.26c-9.22 0-16.695 7.475-16.695 16.696v83.478h-33.39V83.478zm233.74 16.696v66.783H166.956v-66.783h166.956zM33.39 233.74v-16.697c0-9.206 7.49-16.696 16.697-16.696h400.696c9.206 0 16.696 7.49 16.696 16.696v16.696H33.39zm251.556 200.347h-173.18c-8.196 0-15.122-5.867-16.47-13.95l-25.5-153.007h361.278l-2.66 15.967c-10.554-3.14-21.723-4.836-33.283-4.836-64.44 0-116.87 52.43-116.87 116.87 0 13.66 2.37 26.77 6.69 38.96zM395.13 478.61c-46.03 0-83.478-37.45-83.478-83.48s37.448-83.477 83.478-83.477 83.478 37.448 83.478 83.478-37.448 83.48-83.478 83.48z"/>
+<path d="M428.522 378.435h-16.696V361.74c0-9.22-7.475-16.697-16.696-16.697s-16.696 7.475-16.696 16.696v16.69h-16.696c-9.22 0-16.696 7.472-16.696 16.693s7.475 16.696 16.696 16.696h16.696v16.696c0 9.22 7.475 16.695 16.696 16.695s16.696-7.476 16.696-16.697V411.82h16.696c9.22 0 16.696-7.474 16.696-16.695s-7.476-16.695-16.696-16.695z"/>
+</svg>
+            </div>
+          </div>
           <div class="product--desc-wrapper flex-row">
             <div class="product--name-href">
-              <h5>Мальм</h5><a href="#">Кровати</a>
-            </div><a class="price" href="#">2499$</a>
+              <h5>Брусали</h5><a href="#">Кровати</a>
+            </div><a class="price" href="#">3400$</a>
           </div>
         </article>
         <article class="bed card">
-          <div class="product--image"><a href="#"><img src="assets/img/product-image/bed-3.jpg"></a></div>
+          <div class="product--image"><a href="#"><img src="assets/img/product-image/bed-3.jpg"></a>
+            <div class="product-basket"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1600">
+<path d="M150.26 300.522c-9.22 0-16.695 7.475-16.695 16.696V384c0 9.22 7.475 16.696 16.696 16.696s16.7-7.476 16.7-16.696v-66.783c0-9.22-7.47-16.695-16.69-16.695zm100.175 0c-9.22 0-16.696 7.475-16.696 16.696V384c0 9.22 7.47 16.696 16.69 16.696 9.22 0 16.693-7.475 16.693-16.696v-66.783c0-9.22-7.476-16.695-16.696-16.695z"/>
+<path d="M459.808 297.84l5.118-30.71h19.248c9.22 0 16.696-7.475 16.696-16.696v-33.39c0-27.62-22.47-50.088-50.087-50.088h-16.696V83.478C434.087 37.448 396.64 0 350.61 0H150.26c-46.03 0-83.477 37.448-83.477 83.478v83.478H50.087C22.47 166.956 0 189.426 0 217.043v33.39c0 9.22 7.475 16.697 16.696 16.697h19.248L62.36 425.625c4.043 24.25 24.82 41.853 49.406 41.853h191.646c21.42 27.1 54.573 44.522 91.718 44.522C459.572 512 512 459.572 512 395.13c0-40.54-20.754-76.322-52.192-97.29zM100.174 83.477c0-27.618 22.47-50.087 50.087-50.087h200.35c27.62 0 50.09 22.47 50.09 50.088v83.478h-33.39V83.478c0-9.22-7.472-16.696-16.693-16.696H150.26c-9.22 0-16.695 7.475-16.695 16.696v83.478h-33.39V83.478zm233.74 16.696v66.783H166.956v-66.783h166.956zM33.39 233.74v-16.697c0-9.206 7.49-16.696 16.697-16.696h400.696c9.206 0 16.696 7.49 16.696 16.696v16.696H33.39zm251.556 200.347h-173.18c-8.196 0-15.122-5.867-16.47-13.95l-25.5-153.007h361.278l-2.66 15.967c-10.554-3.14-21.723-4.836-33.283-4.836-64.44 0-116.87 52.43-116.87 116.87 0 13.66 2.37 26.77 6.69 38.96zM395.13 478.61c-46.03 0-83.478-37.45-83.478-83.48s37.448-83.477 83.478-83.477 83.478 37.448 83.478 83.478-37.448 83.48-83.478 83.48z"/>
+<path d="M428.522 378.435h-16.696V361.74c0-9.22-7.475-16.697-16.696-16.697s-16.696 7.475-16.696 16.696v16.69h-16.696c-9.22 0-16.696 7.472-16.696 16.693s7.475 16.696 16.696 16.696h16.696v16.696c0 9.22 7.475 16.695 16.696 16.695s16.696-7.476 16.696-16.697V411.82h16.696c9.22 0 16.696-7.474 16.696-16.695s-7.476-16.695-16.696-16.695z"/>
+</svg>
+            </div>
+          </div>
           <div class="product--desc-wrapper flex-row">
             <div class="product--name-href">
-              <h5>Мальм</h5><a href="#">Кровати</a>
-            </div><a class="price" href="#">2499$</a>
+              <h5>Копардаль</h5><a href="#">Кровати</a>
+            </div><a class="price" href="#">999$</a>
           </div>
         </article>
         <article class="bed card">
+          <div class="product--image"><a href="#"><img src="assets/img/product-image/bed-4.jpg"></a>
+            <div class="product-basket"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1600">
+<path d="M150.26 300.522c-9.22 0-16.695 7.475-16.695 16.696V384c0 9.22 7.475 16.696 16.696 16.696s16.7-7.476 16.7-16.696v-66.783c0-9.22-7.47-16.695-16.69-16.695zm100.175 0c-9.22 0-16.696 7.475-16.696 16.696V384c0 9.22 7.47 16.696 16.69 16.696 9.22 0 16.693-7.475 16.693-16.696v-66.783c0-9.22-7.476-16.695-16.696-16.695z"/>
+<path d="M459.808 297.84l5.118-30.71h19.248c9.22 0 16.696-7.475 16.696-16.696v-33.39c0-27.62-22.47-50.088-50.087-50.088h-16.696V83.478C434.087 37.448 396.64 0 350.61 0H150.26c-46.03 0-83.477 37.448-83.477 83.478v83.478H50.087C22.47 166.956 0 189.426 0 217.043v33.39c0 9.22 7.475 16.697 16.696 16.697h19.248L62.36 425.625c4.043 24.25 24.82 41.853 49.406 41.853h191.646c21.42 27.1 54.573 44.522 91.718 44.522C459.572 512 512 459.572 512 395.13c0-40.54-20.754-76.322-52.192-97.29zM100.174 83.477c0-27.618 22.47-50.087 50.087-50.087h200.35c27.62 0 50.09 22.47 50.09 50.088v83.478h-33.39V83.478c0-9.22-7.472-16.696-16.693-16.696H150.26c-9.22 0-16.695 7.475-16.695 16.696v83.478h-33.39V83.478zm233.74 16.696v66.783H166.956v-66.783h166.956zM33.39 233.74v-16.697c0-9.206 7.49-16.696 16.697-16.696h400.696c9.206 0 16.696 7.49 16.696 16.696v16.696H33.39zm251.556 200.347h-173.18c-8.196 0-15.122-5.867-16.47-13.95l-25.5-153.007h361.278l-2.66 15.967c-10.554-3.14-21.723-4.836-33.283-4.836-64.44 0-116.87 52.43-116.87 116.87 0 13.66 2.37 26.77 6.69 38.96zM395.13 478.61c-46.03 0-83.478-37.45-83.478-83.48s37.448-83.477 83.478-83.477 83.478 37.448 83.478 83.478-37.448 83.48-83.478 83.48z"/>
+<path d="M428.522 378.435h-16.696V361.74c0-9.22-7.475-16.697-16.696-16.697s-16.696 7.475-16.696 16.696v16.69h-16.696c-9.22 0-16.696 7.472-16.696 16.693s7.475 16.696 16.696 16.696h16.696v16.696c0 9.22 7.475 16.695 16.696 16.695s16.696-7.476 16.696-16.697V411.82h16.696c9.22 0 16.696-7.474 16.696-16.695s-7.476-16.695-16.696-16.695z"/>
+</svg>
+            </div>
+          </div>
+          <div class="product--desc-wrapper flex-row">
+            <div class="product--name-href">
+              <h5>Опланд</h5><a href="#">Кровати</a>
+            </div><a class="price" href="#">7000$</a>
+          </div>
+        </article>
+        <article class="bed card">
+          <div class="product--image"><a href="#"><img src="assets/img/product-image/bed-5.jpg"></a>
+            <div class="product-basket"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1600">
+<path d="M150.26 300.522c-9.22 0-16.695 7.475-16.695 16.696V384c0 9.22 7.475 16.696 16.696 16.696s16.7-7.476 16.7-16.696v-66.783c0-9.22-7.47-16.695-16.69-16.695zm100.175 0c-9.22 0-16.696 7.475-16.696 16.696V384c0 9.22 7.47 16.696 16.69 16.696 9.22 0 16.693-7.475 16.693-16.696v-66.783c0-9.22-7.476-16.695-16.696-16.695z"/>
+<path d="M459.808 297.84l5.118-30.71h19.248c9.22 0 16.696-7.475 16.696-16.696v-33.39c0-27.62-22.47-50.088-50.087-50.088h-16.696V83.478C434.087 37.448 396.64 0 350.61 0H150.26c-46.03 0-83.477 37.448-83.477 83.478v83.478H50.087C22.47 166.956 0 189.426 0 217.043v33.39c0 9.22 7.475 16.697 16.696 16.697h19.248L62.36 425.625c4.043 24.25 24.82 41.853 49.406 41.853h191.646c21.42 27.1 54.573 44.522 91.718 44.522C459.572 512 512 459.572 512 395.13c0-40.54-20.754-76.322-52.192-97.29zM100.174 83.477c0-27.618 22.47-50.087 50.087-50.087h200.35c27.62 0 50.09 22.47 50.09 50.088v83.478h-33.39V83.478c0-9.22-7.472-16.696-16.693-16.696H150.26c-9.22 0-16.695 7.475-16.695 16.696v83.478h-33.39V83.478zm233.74 16.696v66.783H166.956v-66.783h166.956zM33.39 233.74v-16.697c0-9.206 7.49-16.696 16.697-16.696h400.696c9.206 0 16.696 7.49 16.696 16.696v16.696H33.39zm251.556 200.347h-173.18c-8.196 0-15.122-5.867-16.47-13.95l-25.5-153.007h361.278l-2.66 15.967c-10.554-3.14-21.723-4.836-33.283-4.836-64.44 0-116.87 52.43-116.87 116.87 0 13.66 2.37 26.77 6.69 38.96zM395.13 478.61c-46.03 0-83.478-37.45-83.478-83.48s37.448-83.477 83.478-83.477 83.478 37.448 83.478 83.478-37.448 83.48-83.478 83.48z"/>
+<path d="M428.522 378.435h-16.696V361.74c0-9.22-7.475-16.697-16.696-16.697s-16.696 7.475-16.696 16.696v16.69h-16.696c-9.22 0-16.696 7.472-16.696 16.693s7.475 16.696 16.696 16.696h16.696v16.696c0 9.22 7.475 16.695 16.696 16.695s16.696-7.476 16.696-16.697V411.82h16.696c9.22 0 16.696-7.474 16.696-16.695s-7.476-16.695-16.696-16.695z"/>
+</svg>
+            </div>
+          </div>
+          <div class="product--desc-wrapper flex-row">
+            <div class="product--name-href">
+              <h5>Ундредаль</h5><a href="#">Кровати</a>
+            </div><a class="price" href="#">3222$</a>
+          </div>
+        </article>
+        <article class="bed card">
+          <div class="product--image"><a href="#"><img src="assets/img/product-image/bed-6.jpg"></a>
+            <div class="product-basket"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1600">
+<path d="M150.26 300.522c-9.22 0-16.695 7.475-16.695 16.696V384c0 9.22 7.475 16.696 16.696 16.696s16.7-7.476 16.7-16.696v-66.783c0-9.22-7.47-16.695-16.69-16.695zm100.175 0c-9.22 0-16.696 7.475-16.696 16.696V384c0 9.22 7.47 16.696 16.69 16.696 9.22 0 16.693-7.475 16.693-16.696v-66.783c0-9.22-7.476-16.695-16.696-16.695z"/>
+<path d="M459.808 297.84l5.118-30.71h19.248c9.22 0 16.696-7.475 16.696-16.696v-33.39c0-27.62-22.47-50.088-50.087-50.088h-16.696V83.478C434.087 37.448 396.64 0 350.61 0H150.26c-46.03 0-83.477 37.448-83.477 83.478v83.478H50.087C22.47 166.956 0 189.426 0 217.043v33.39c0 9.22 7.475 16.697 16.696 16.697h19.248L62.36 425.625c4.043 24.25 24.82 41.853 49.406 41.853h191.646c21.42 27.1 54.573 44.522 91.718 44.522C459.572 512 512 459.572 512 395.13c0-40.54-20.754-76.322-52.192-97.29zM100.174 83.477c0-27.618 22.47-50.087 50.087-50.087h200.35c27.62 0 50.09 22.47 50.09 50.088v83.478h-33.39V83.478c0-9.22-7.472-16.696-16.693-16.696H150.26c-9.22 0-16.695 7.475-16.695 16.696v83.478h-33.39V83.478zm233.74 16.696v66.783H166.956v-66.783h166.956zM33.39 233.74v-16.697c0-9.206 7.49-16.696 16.697-16.696h400.696c9.206 0 16.696 7.49 16.696 16.696v16.696H33.39zm251.556 200.347h-173.18c-8.196 0-15.122-5.867-16.47-13.95l-25.5-153.007h361.278l-2.66 15.967c-10.554-3.14-21.723-4.836-33.283-4.836-64.44 0-116.87 52.43-116.87 116.87 0 13.66 2.37 26.77 6.69 38.96zM395.13 478.61c-46.03 0-83.478-37.45-83.478-83.48s37.448-83.477 83.478-83.477 83.478 37.448 83.478 83.478-37.448 83.48-83.478 83.48z"/>
+<path d="M428.522 378.435h-16.696V361.74c0-9.22-7.475-16.697-16.696-16.697s-16.696 7.475-16.696 16.696v16.69h-16.696c-9.22 0-16.696 7.472-16.696 16.693s7.475 16.696 16.696 16.696h16.696v16.696c0 9.22 7.475 16.695 16.696 16.695s16.696-7.476 16.696-16.697V411.82h16.696c9.22 0 16.696-7.474 16.696-16.695s-7.476-16.695-16.696-16.695z"/>
+</svg>
+            </div>
+          </div>
+          <div class="product--desc-wrapper flex-row">
+            <div class="product--name-href">
+              <h5>Аскволь</h5><a href="#">Кровати</a>
+            </div><a class="price" href="#">12000$</a>
+          </div>
+        </article>
+        <article class="drawer card">
+          <div class="product--image"><a href="#"><img src="assets/img/product-image/drawer-1.jpg"></a></div>
+          <div class="product--desc-wrapper flex-row">
+            <div class="product--name-href">
+              <h5>Пакс</h5><a href="#">Комоды</a>
+            </div><a class="price" href="#">3500$</a>
+          </div>
+        </article>
+        <article class="drawer card">
+          <div class="product--image"><a href="#"><img src="assets/img/product-image/drawer-2.jpg"></a></div>
+          <div class="product--desc-wrapper flex-row">
+            <div class="product--name-href">
+              <h5>Бримнес</h5><a href="#">Комоды</a>
+            </div><a class="price" href="#">3400$</a>
+          </div>
+        </article>
+        <article class="drawer card">
+          <div class="product--image"><a href="#"><img src="assets/img/product-image/drawer-3.jpg"></a></div>
+          <div class="product--desc-wrapper flex-row">
+            <div class="product--name-href">
+              <h5>Метод</h5><a href="#">Комоды</a>
+            </div><a class="price" href="#">780$</a>
+          </div>
+        </article>
+        <article class="drawer card">
+          <div class="product--image"><a href="#"><img src="assets/img/product-image/drawer-4.jpg"></a></div>
+          <div class="product--desc-wrapper flex-row">
+            <div class="product--name-href">
+              <h5>Гурдар</h5><a href="#">Комоды</a>
+            </div><a class="price" href="#">500$</a>
+          </div>
+        </article>
+        <article class="drawer card">
+          <div class="product--image"><a href="#"><img src="assets/img/product-image/drawer-5.jpg"></a></div>
+          <div class="product--desc-wrapper flex-row">
+            <div class="product--name-href">
+              <h5>Сильверон</h5><a href="#">Комоды</a>
+            </div><a class="price" href="#">6060$</a>
+          </div>
+        </article>
+        <article class="drawer card">
+          <div class="product--image"><a href="#"><img src="assets/img/product-image/drawer-6.jpg"></a></div>
+          <div class="product--desc-wrapper flex-row">
+            <div class="product--name-href">
+              <h5>Марс</h5><a href="#">Комоды</a>
+            </div><a class="price" href="#">1800$</a>
+          </div>
+        </article>
+        <article class="chair card">
           <div class="product--image"><a href="#"><img src="assets/img/product-image/chair-1.jpg"></a></div>
           <div class="product--desc-wrapper flex-row">
             <div class="product--name-href">
-              <h5>Мальм</h5><a href="#">Кровати</a>
-            </div><a class="price" href="#">2499$</a>
-          </div>
-        </article>
-        <article class="bed card">
-          <div class="product--image"><a href="#"><img src="assets/img/product-image/chair-2.jpg"></a></div>
-          <div class="product--desc-wrapper flex-row">
-            <div class="product--name-href">
-              <h5>Мальм</h5><a href="#">Кровати</a>
-            </div><a class="price" href="#">2499$</a>
-          </div>
-        </article>
-        <article class="bed card">
-          <div class="product--image"><a href="#"><img src="assets/img/product-image/chair-3.jpg"></a></div>
-          <div class="product--desc-wrapper flex-row">
-            <div class="product--name-href">
-              <h5>Мальм</h5><a href="#">Кровати</a>
-            </div><a class="price" href="#">2499$</a>
-          </div>
-        </article>
-        <article class="chest card">
-          <div class="product--image"><a href="#"><img src="assets/img/product-image/bed-1.jpg"></a></div>
-          <div class="product--desc-wrapper flex-row">
-            <div class="product--name-href">
-              <h5>Мальм</h5><a href="#">Кровати</a>
-            </div><a class="price" href="#">2499$</a>
-          </div>
-        </article>
-        <article class="chest card">
-          <div class="product--image"><a href="#"><img src="assets/img/product-image/bed-2.jpg"></a></div>
-          <div class="product--desc-wrapper flex-row">
-            <div class="product--name-href">
-              <h5>Мальм</h5><a href="#">Кровати</a>
-            </div><a class="price" href="#">2499$</a>
-          </div>
-        </article>
-        <article class="chest card">
-          <div class="product--image"><a href="#"><img src="assets/img/product-image/bed-3.jpg"></a></div>
-          <div class="product--desc-wrapper flex-row">
-            <div class="product--name-href">
-              <h5>Мальм</h5><a href="#">Кровати</a>
-            </div><a class="price" href="#">2499$</a>
-          </div>
-        </article>
-        <article class="chest card">
-          <div class="product--image"><a href="#"><img src="assets/img/product-image/chair-1.jpg"></a></div>
-          <div class="product--desc-wrapper flex-row">
-            <div class="product--name-href">
-              <h5>Мальм</h5><a href="#">Кровати</a>
-            </div><a class="price" href="#">2499$</a>
-          </div>
-        </article>
-        <article class="chest card">
-          <div class="product--image"><a href="#"><img src="assets/img/product-image/chair-2.jpg"></a></div>
-          <div class="product--desc-wrapper flex-row">
-            <div class="product--name-href">
-              <h5>Мальм</h5><a href="#">Кровати</a>
-            </div><a class="price" href="#">2499$</a>
-          </div>
-        </article>
-        <article class="chest card">
-          <div class="product--image"><a href="#"><img src="assets/img/product-image/chair-3.jpg"></a></div>
-          <div class="product--desc-wrapper flex-row">
-            <div class="product--name-href">
-              <h5>Мальм</h5><a href="#">Кровати</a>
-            </div><a class="price" href="#">2499$</a>
-          </div>
-        </article>
-        <article class="chair card">
-          <div class="product--image"><a href="#"><img src="assets/img/product-image/bed-1.jpg"></a></div>
-          <div class="product--desc-wrapper flex-row">
-            <div class="product--name-href">
-              <h5>Мальм</h5><a href="#">Кровати</a>
-            </div><a class="price" href="#">2499$</a>
-          </div>
-        </article>
-        <article class="chair card">
-          <div class="product--image"><a href="#"><img src="assets/img/product-image/bed-2.jpg"></a></div>
-          <div class="product--desc-wrapper flex-row">
-            <div class="product--name-href">
-              <h5>Мальм</h5><a href="#">Кровати</a>
-            </div><a class="price" href="#">2499$</a>
-          </div>
-        </article>
-        <article class="chair card">
-          <div class="product--image"><a href="#"><img src="assets/img/product-image/bed-3.jpg"></a></div>
-          <div class="product--desc-wrapper flex-row">
-            <div class="product--name-href">
-              <h5>Мальм</h5><a href="#">Кровати</a>
-            </div><a class="price" href="#">2499$</a>
-          </div>
-        </article>
-        <article class="chair card">
-          <div class="product--image"><a href="#"><img src="assets/img/product-image/chair-1.jpg"></a></div>
-          <div class="product--desc-wrapper flex-row">
-            <div class="product--name-href">
-              <h5>Мальм</h5><a href="#">Кровати</a>
-            </div><a class="price" href="#">2499$</a>
+              <h5>Каустби</h5><a href="#">Стулья</a>
+            </div><a class="price" href="#">1999$</a>
           </div>
         </article>
         <article class="chair card">
           <div class="product--image"><a href="#"><img src="assets/img/product-image/chair-2.jpg"></a></div>
           <div class="product--desc-wrapper flex-row">
             <div class="product--name-href">
-              <h5>Мальм</h5><a href="#">Кровати</a>
-            </div><a class="price" href="#">2499$</a>
+              <h5>Эльмста</h5><a href="#">Стулья</a>
+            </div><a class="price" href="#">3400$</a>
           </div>
         </article>
         <article class="chair card">
           <div class="product--image"><a href="#"><img src="assets/img/product-image/chair-3.jpg"></a></div>
           <div class="product--desc-wrapper flex-row">
             <div class="product--name-href">
-              <h5>Мальм</h5><a href="#">Кровати</a>
-            </div><a class="price" href="#">2499$</a>
+              <h5>Ивар</h5><a href="#">Стулья</a>
+            </div><a class="price" href="#">999$</a>
+          </div>
+        </article>
+        <article class="chair card">
+          <div class="product--image"><a href="#"><img src="assets/img/product-image/chair-4.jpg"></a></div>
+          <div class="product--desc-wrapper flex-row">
+            <div class="product--name-href">
+              <h5>Харри</h5><a href="#">Стулья</a>
+            </div><a class="price" href="#">7000$</a>
+          </div>
+        </article>
+        <article class="chair card">
+          <div class="product--image"><a href="#"><img src="assets/img/product-image/chair-5.jpg"></a></div>
+          <div class="product--desc-wrapper flex-row">
+            <div class="product--name-href">
+              <h5>Хенриксдаль</h5><a href="#">Стулья</a>
+            </div><a class="price" href="#">3222$</a>
+          </div>
+        </article>
+        <article class="chair card">
+          <div class="product--image"><a href="#"><img src="assets/img/product-image/chair-6.jpg"></a></div>
+          <div class="product--desc-wrapper flex-row">
+            <div class="product--name-href">
+              <h5>Лерхамн</h5><a href="#">Стулья</a>
+            </div><a class="price" href="#">12000$</a>
           </div>
         </article>
         <article class="table card">
-          <div class="product--image"><a href="#"><img src="assets/img/product-image/bed-1.jpg"></a></div>
+          <div class="product--image"><a href="#"><img src="assets/img/product-image/table-1.jpg"></a></div>
           <div class="product--desc-wrapper flex-row">
             <div class="product--name-href">
-              <h5>Мальм</h5><a href="#">Кровати</a>
-            </div><a class="price" href="#">2499$</a>
+              <h5>Норберг</h5><a href="#">Столы</a>
+            </div><a class="price" href="#">1999$</a>
           </div>
         </article>
         <article class="table card">
-          <div class="product--image"><a href="#"><img src="assets/img/product-image/bed-2.jpg"></a></div>
+          <div class="product--image"><a href="#"><img src="assets/img/product-image/table-2.jpg"></a></div>
           <div class="product--desc-wrapper flex-row">
             <div class="product--name-href">
-              <h5>Мальм</h5><a href="#">Кровати</a>
-            </div><a class="price" href="#">2499$</a>
+              <h5>Лиаторп</h5><a href="#">Столы</a>
+            </div><a class="price" href="#">3400$</a>
           </div>
         </article>
         <article class="table card">
-          <div class="product--image"><a href="#"><img src="assets/img/product-image/bed-3.jpg"></a></div>
+          <div class="product--image"><a href="#"><img src="assets/img/product-image/table-3.jpg"></a></div>
           <div class="product--desc-wrapper flex-row">
             <div class="product--name-href">
-              <h5>Мальм</h5><a href="#">Кровати</a>
-            </div><a class="price" href="#">2499$</a>
+              <h5>Тодалем</h5><a href="#">Столы</a>
+            </div><a class="price" href="#">999$</a>
           </div>
         </article>
         <article class="table card">
-          <div class="product--image"><a href="#"><img src="assets/img/product-image/chair-1.jpg"></a></div>
+          <div class="product--image"><a href="#"><img src="assets/img/product-image/table-4.jpg"></a></div>
           <div class="product--desc-wrapper flex-row">
             <div class="product--name-href">
-              <h5>Мальм</h5><a href="#">Кровати</a>
-            </div><a class="price" href="#">2499$</a>
+              <h5>Ресо</h5><a href="#">Столы</a>
+            </div><a class="price" href="#">7000$</a>
           </div>
         </article>
         <article class="table card">
-          <div class="product--image"><a href="#"><img src="assets/img/product-image/chair-2.jpg"></a></div>
+          <div class="product--image"><a href="#"><img src="assets/img/product-image/table-5.jpg"></a></div>
           <div class="product--desc-wrapper flex-row">
             <div class="product--name-href">
-              <h5>Мальм</h5><a href="#">Кровати</a>
-            </div><a class="price" href="#">2499$</a>
+              <h5>Скрутт</h5><a href="#">Столы</a>
+            </div><a class="price" href="#">3222$</a>
           </div>
         </article>
         <article class="table card">
-          <div class="product--image"><a href="#"><img src="assets/img/product-image/chair-3.jpg"></a></div>
+          <div class="product--image"><a href="#"><img src="assets/img/product-image/table-6.jpg"></a></div>
           <div class="product--desc-wrapper flex-row">
             <div class="product--name-href">
-              <h5>Мальм</h5><a href="#">Кровати</a>
-            </div><a class="price" href="#">2499$</a>
+              <h5>Алекс</h5><a href="#">Столы</a>
+            </div><a class="price" href="#">12000$</a>
           </div>
         </article>
       </div>
@@ -388,8 +430,8 @@
           </div>
         </div>
         <div class="contact--copyright">
-          <p>Реализация: <a href="https://vadimkolosov.pro/" target="_blank"> Vadim Kolosov </a></p>
-          <p>Дизайн:  <a href="http://challengestudio.pl" target="_blank"> CHALLENGE Studio </a></p>
+          <p>Реализация: <a href="https://vadimkolosov.pro/" target="_blank" rel="noopener"> Vadim Kolosov </a></p>
+          <p>Дизайн:  <a href="http://challengestudio.pl" target="_blank" rel="noopener"> CHALLENGE Studio </a></p>
           <p>&copy 2017 CHALLENGE Studio</p>
         </div>
       </div>

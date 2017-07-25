@@ -5,23 +5,46 @@
 .product
   height: 100vh
   background-color: $lightGrey
+  @media (max-width: 768px)
+    flex-direction: column
+    height: auto
+    box-sizing: border-box
+    padding-bottom: 50px
+
+  &--left-content
+    @media (max-width: 768px)
+      flex-direction: row
+      justify-content: space-between
+      height: 150px
+      width: 100%
+    @media (max-width: 480px) and (orientation: landscape)
+      flex-direction: column
+    @media (max-width: 414px) and (orientation: portrait)
+      margin-bottom: 30px
+    @media (max-width: 414px)
+      flex-direction: column
 
   &--logo-headline
     height: 45%
+    @media (max-width: 1024px) and (orientation: landscape)
+      height: 55%
+    @media (max-width: 1024px) and (orientation: portrait)
+      height: 30%
+
     .site-logo
       margin-bottom: 100px
       svg
         path
           fill: $black
+  &--headline
+    @media (max-width: 768px)
+      display: none
 
   &--category
     height: 100%
     justify-content: space-between
 
   &--category-content
-    ul
-      // background-color: green
-      // height: 61.5vh
     h4
       position: relative
       margin-bottom: 30px
@@ -33,12 +56,31 @@
         width: 90px
         height: 1px
         background-color: $lightBrown
+      @media (max-width: 768px)
+        display: none
+  &--link-wrapper
+    @media (max-width: 768px)
+      flex-direction: row
+      margin-right: 20px
+    @media (max-width: 414px)
+      margin: 20px 0
     a
       color: $darkGrey
       font-weight: bold
       transition: .1s ease-in-out
       &:hover
         color: $lightBrown
+      @media (max-width: 1024px) and (orientation: landscape)
+        padding: 4px 0
+      @media (max-width: 768px)
+        padding: 10px 20px
+        margin-top: 40px
+      @media (max-width:375px)
+        padding: 12px
+        margin-top: 40px
+      @media (max-width:320px)
+        padding: 6px
+        margin-top: 50px
     svg
       width: 100px
       path
@@ -46,13 +88,19 @@
 
   &--svg
     margin-top: 60px
+    @media (max-width: 768px)
+      display: none
 
 
   &--production-wrapper
-    overflow-y: scroll
     justify-content: center
     align-content: center
     flex-wrap: wrap
+    overflow: hidden
+    @media (max-width: 768px)
+      width: 100%
+      overflow: visible
+
 
   article
     margin: 10px
@@ -63,8 +111,29 @@
       transition: .3s ease-in-out
     &:hover
       box-shadow: 0 0 8px 0 lighten($black, 85%)
-      
+    @media (max-width: 1366px) and (orientation: landscape)
+      width: 250px
+      height: 300px
+      margin: 30px 10px
+    @media (max-width: 1024px) and (orientation: landscape)
+      width: 200px
+      height: 250px
+      margin: 30px 10px
+    @media (max-width: 768px)
+      height: 340px
+      margin: 0 10px
+    @media (max-width: 640px) and (orientation: landscape)
+      width: 280px
+    @media (max-width: 568px) and (orientation: landscape)
+      width: 250px
+    @media (max-width: 480px) and (orientation: landscape)
+      width: 210px
+    @media (max-width: 414px)
+      width: 100%
+      height: 380px
+
   &--image
+    position: relative
     overflow: hidden
     img
       display: block
@@ -73,8 +142,31 @@
       margin: 0
       padding: 0
       transition: .3s ease-in-out
+      @media (max-width: 1366px) and (orientation: landscape)
+        height: 260px
+      @media (max-width: 1024px) and (orientation: landscape)
+        height: 210px
+      @media (max-width: 768px)
+        height: 250px
+      @media (max-width: 414px)
+        height: 280px
     &:hover img
      transform: scale(1.02)
+    .product-basket
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      border-radius: 50%
+      background-color: transparentize($black, 0.8)
+      transition: .3s ease-in-out
+      transform: scale(0)
+      svg
+        position: relative
+        top: calc(50% - 50px)
+        left: calc(50% - 50px)
+        fill: transparentize($white, 0.1)
 
   &--desc-wrapper
     height: 70px
