@@ -1,4 +1,4 @@
-.product.flex-row
+.product.flex-row#product
   .product--left-content.left-padding.flex-col.col-x2
     .product--logo-headline.flex-col
       .site-logo
@@ -25,9 +25,7 @@
     each item in [ {image: 'bed-1.jpg', price: '1999$', name: 'Хемнэс'}, {image: 'bed-2.jpg', price: '3400$', name: 'Брусали'}, {image: 'bed-3.jpg', price: '999$', name: 'Копардаль'}, {image: 'bed-4.jpg', price: '7000$', name: 'Опланд'}, {image: 'bed-5.jpg', price: '3222$', name: 'Ундредаль'}, {image: 'bed-6.jpg', price: '12000$', name: 'Аскволь'} ]
       article.bed.card
         .product--image
-          a(href="#"): img(src= imagePath + item.image)
-          .product-basket
-            include icons/product-basket.pug
+          a(href="#"): img(alt="Мебель" src= imagePath + item.image)
         .product--desc-wrapper.flex-row
           .product--name-href
             h5= item.name
@@ -40,7 +38,7 @@
     each item in [ {image: 'drawer-1.jpg', price: '3500$', name: 'Пакс'}, {image: 'drawer-2.jpg', price: '3400$', name: 'Бримнес'}, {image: 'drawer-3.jpg', price: '780$', name: 'Метод'}, {image: 'drawer-4.jpg', price: '500$', name: 'Гурдар'}, {image: 'drawer-5.jpg', price: '6060$', name: 'Сильверон'}, {image: 'drawer-6.jpg', price: '1800$', name: 'Марс'} ]
       article.drawer.card
         .product--image
-          a(href="#"): img(src= imagePath + item.image)
+          a(href="#"): img(alt="Мебель" src= imagePath + item.image)
         .product--desc-wrapper.flex-row
           .product--name-href
             h5= item.name
@@ -52,7 +50,7 @@
     each item in [ {image: 'chair-1.jpg', price: '1999$', name: 'Каустби'}, {image: 'chair-2.jpg', price: '3400$', name: 'Эльмста'}, {image: 'chair-3.jpg', price: '999$', name: 'Ивар'}, {image: 'chair-4.jpg', price: '7000$', name: 'Харри'}, {image: 'chair-5.jpg', price: '3222$', name: 'Хенриксдаль'}, {image: 'chair-6.jpg', price: '12000$', name: 'Лерхамн'} ]
       article.chair.card
         .product--image
-          a(href="#"): img(src= imagePath + item.image)
+          a(href="#"): img(alt="Мебель" src= imagePath + item.image)
         .product--desc-wrapper.flex-row
           .product--name-href
             h5= item.name
@@ -64,7 +62,7 @@
     each item in [ {image: 'table-1.jpg', price: '1999$', name: 'Норберг'}, {image: 'table-2.jpg', price: '3400$', name: 'Лиаторп'}, {image: 'table-3.jpg', price: '999$', name: 'Тодалем'}, {image: 'table-4.jpg', price: '7000$', name: 'Ресо'}, {image: 'table-5.jpg', price: '3222$', name: 'Скрутт'}, {image: 'table-6.jpg', price: '12000$', name: 'Алекс'} ]
       article.table.card
         .product--image
-          a(href="#"): img(src= imagePath + item.image)
+          a(href="#"): img(alt="Мебель" src= imagePath + item.image)
         .product--desc-wrapper.flex-row
           .product--name-href
             h5= item.name

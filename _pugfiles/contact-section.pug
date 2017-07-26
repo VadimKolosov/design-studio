@@ -1,4 +1,4 @@
-section.contact.flex-row
+section.contact.flex-row#contact
   
   .contact--left-content.left-padding.flex-col.col-x2
     .contact--logo-headline.flex-col
@@ -22,17 +22,20 @@ section.contact.flex-row
       p &copy 2017 CHALLENGE Studio
         
   .contact--form-content.flex-col.col-x3  
-    form(method='POST')
-      .contact--form-wrapper.flex-col
-        h4 Свяжитесь с нами
+    form(method='POST').contact--form-wrapper.flex-col
+      h4 Свяжитесь с нами
+      label(for='name' aria-label='Имя')
         input(type='text', name='name' placeholder="Ваше имя")
+      label(for='phone' aria-label='Телефон')
         input(type='phone', name='phone' placeholder="Телефон")
+      label(for='_replyto' aria-label='Email')
         input(type='email', name='_replyto' placeholder="Email")
+      label(for='message' aria-label='Сообщение')
         textarea(name="message" rows="1" placeholder="Сообщение")
-  
-        button(type='submit', value='Send') 
-          span Отправить сообщение
-          include icons/icon-envelope.pug
+
+      button(type='submit', value='Send', aria-label="send button") 
+        span Отправить сообщение
+        include icons/icon-envelope.pug
           
   .contact--map-wrapper.col-x1
     include icons/icon-map-marker.pug

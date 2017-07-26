@@ -3,8 +3,9 @@ html(lang='ru')
   head
     meta(charset='UTF-8')
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
-    meta(http-equiv='X-UA-Compatible', content='ie=edge')      
+    meta(http-equiv='X-UA-Compatible', content='ie=edge')
     title Design Studio
+    link(rel="manifest" href="assets/js/manifest.json")
     link(rel="icon" href="assets/img/favicon.png")
     link(rel='stylesheet', href='assets/css/main.css')
   body
@@ -15,7 +16,7 @@ html(lang='ru')
     include contact-section.pug
   
     
-    script(src='assets/js/jquery-3.1.1.min.js')
-    script(src='assets/js/custom.js')
-    script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCaPht6mvddX1_gIAxuXF-KXN_vbPS30hc&callback=initMap")
+    script(defer src='assets/js/jquery-3.1.1.min.js')
+    script(defer src='assets/js/custom.js')
+    script(defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCaPht6mvddX1_gIAxuXF-KXN_vbPS30hc&callback=initMap")
   

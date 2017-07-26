@@ -26,6 +26,8 @@
 
   &--logo-headline
     height: 45%
+    @media (max-width: 1334px) and (orientation: landscape)
+      height: 60%
     @media (max-width: 1024px) and (orientation: landscape)
       height: 55%
     @media (max-width: 1024px) and (orientation: portrait)
@@ -152,21 +154,6 @@
         height: 280px
     &:hover img
      transform: scale(1.02)
-    .product-basket
-      position: absolute
-      top: 0
-      left: 0
-      width: 100%
-      height: 100%
-      border-radius: 50%
-      background-color: transparentize($black, 0.8)
-      transition: .3s ease-in-out
-      transform: scale(0)
-      svg
-        position: relative
-        top: calc(50% - 50px)
-        left: calc(50% - 50px)
-        fill: transparentize($white, 0.1)
 
   &--desc-wrapper
     height: 70px

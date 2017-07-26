@@ -1,5 +1,5 @@
-header.header.flex-row
-  button.hamburger
+header.header.flex-row#header
+  button(role="button" aria-label="Hamburger button").hamburger
     span.line-top
     span.line-middle
     span.line-bottom
@@ -12,11 +12,11 @@ header.header.flex-row
   
   .header--menu-wrapper.col-x1
     nav.header--link-wrapper(role="navigation" aria-label="Menu")
-      a(href="#") Начало
-      a(href="#") О нас
-      a(href="#") Услуги
-      a(href="#") Изделия
-      a(href="#") Контакты
+      a(href="#header") Начало
+      a(href="#about") О нас
+      a(href="#services") Услуги
+      a(href="#product") Изделия
+      a(href="#contact") Контакты
       
     .header--contact-wrapper.flex-col
       p
@@ -27,11 +27,11 @@ header.header.flex-row
         a(href="mailto:info@studioddesign.io") info@studioddesign.io
         
       .header--social-wrapepr.flex-row
-        a(href="#")
+        a(href="https://vadimkolosov.pro/" target="_blank" rel="noopener")
           include icons/icon-facebook.pug
-        a(href="#")
+        a(href="https://pinterest.com/webvadimkolosov/" target="_blank" rel="noopener")
           include icons/icon-pinterest.pug
-        a(href="#")
+        a(href="https://www.behance.net/travisneilson" target="_blank" rel="noopener")
           include icons/icon-behance.pug
     
     
